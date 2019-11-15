@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF2237F2FEE00ED3850 /* R.generated.swift */; };
 		A57D0591237F20C200158DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0590237F20C200158DDD /* AppDelegate.swift */; };
 		A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0592237F20C200158DDD /* SceneDelegate.swift */; };
 		A57D0595237F20C200158DDD /* BarcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0594237F20C200158DDD /* BarcodeController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TooHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801BEF59E234975443213214 /* Pods-TooHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.debug.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.debug.xcconfig"; sourceTree = "<group>"; };
+		A55B3DF2237F2FEE00ED3850 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A57D058D237F20C200158DDD /* TooHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D0590237F20C200158DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57D0592237F20C200158DDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		A57D05A8237F2D1300158DDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A55B3DF2237F2FEE00ED3850 /* R.generated.swift */,
 				A57D059B237F20C400158DDD /* Assets.xcassets */,
 				A57D05A0237F20C400158DDD /* Info.plist */,
 			);
@@ -134,6 +137,7 @@
 			buildConfigurationList = A57D05A3237F20C400158DDD /* Build configuration list for PBXNativeTarget "TooHealthy" */;
 			buildPhases = (
 				2EA4D0961379F08C2A166808 /* [CP] Check Pods Manifest.lock */,
+				A55B3DF1237F2F4900ED3850 /* R.swift */,
 				A57D0589237F20C200158DDD /* Sources */,
 				A57D058A237F20C200158DDD /* Frameworks */,
 				A57D058B237F20C200158DDD /* Resources */,
@@ -234,6 +238,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TooHealthy/Pods-TooHealthy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A55B3DF1237F2F4900ED3850 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,6 +267,7 @@
 			files = (
 				A57D0597237F20C200158DDD /* ProfileViewController.swift in Sources */,
 				A57D0595237F20C200158DDD /* BarcodeController.swift in Sources */,
+				A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */,
 				A57D0591237F20C200158DDD /* AppDelegate.swift in Sources */,
 				A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */,
 			);

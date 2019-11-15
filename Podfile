@@ -7,5 +7,6 @@ target 'TooHealthy' do
 
   # Pods for TooHealthy
   pod 'BarcodeScanner'
+  pod 'R.swift'
 
 end
