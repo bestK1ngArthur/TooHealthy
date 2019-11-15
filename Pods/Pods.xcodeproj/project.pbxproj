@@ -16,79 +16,56 @@
 				4C96BD147A28C219742913509A3A6065 /* PBXTargetDependency */,
 			);
 			name = R.swift;
-			productName = R.swift;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0531D2ECFAED1869832D1960366BF51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0DC440C4222F19B4AC6A39E66CFCFA /* Foundation.framework */; };
-		05519B9665090CCFB57090658A42AC99 /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11CEC2D71A5DC4584BB7DEB45679FE /* FocusViewType.swift */; };
-		085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DAE0DFD75C7C088A93BC44BB48C76 /* ReuseIdentifierProtocol.swift */; };
-		09BEA257F62431C7B5B565E8FA0BF5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0DC440C4222F19B4AC6A39E66CFCFA /* Foundation.framework */; };
-		0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B2E3EDA3D2078B21432D6BDE418F8 /* StoryboardSegueIdentifierProtocol.swift */; };
-		0B087B29DEC4C87B8313DD679515DB1F /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0245C3F83DE5C67CC4AFC7238DAFA /* flashOff@3x.png */; };
-		13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67286DA8ABBF7FEADD9818602D64D53 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
-		15B6347CF50683E7C41F48FF0AD9A393 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B38AD83C274D6E9113F126DEF0A2A6 /* TorchMode.swift */; };
-		17618A4AA27551F8F40AACCF19CD1599 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A37C5027C095A3B4F800326279A1D6 /* HeaderViewController.swift */; };
-		17E8F41AD1197DA7F604BC2B0DDC6FB6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3C0DDBC37139D2487CCFF8BB2E34DE4 /* Localizable.strings */; };
-		1E15B18846FC5096D0C088546D99C7E2 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A665AB7CC98A0BB47630686FC0907 /* NSLayoutConstraint+Extensions.swift */; };
-		2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094068CB5DE95354561EE13768E66C2 /* UIImage+ImageResource.swift */; };
-		273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723A8DF1ED78D8398D5A01773BEEDECC /* UINib+NibResource.swift */; };
-		28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26233A147875A5C163F0BB011C0FE40 /* UIViewController+NibResource.swift */; };
-		2D29B53D148CEFEEC09AD91339C3ACCF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357918F9287D4B5101BADA1EF5C154D1 /* UIView+Extensions.swift */; };
-		418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119CA529AC2F00C396068811C42BBEBF /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
-		47C6FDD3E25D259665C8157A8D74250D /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */; };
-		4CE7E0E266DD512C1267EEAD9DC1258A /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C487276CED28F3C7266666A5A4CD5A05 /* BarcodeScanner-dummy.m */; };
-		50C90E4DF1433624D5805AD2DDC651D3 /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21932FE60A8BA02DE6754ADB8DFA68 /* AVMetadataObject+Extensions.swift */; };
-		5357052101DABA8DA6F363DF4144EFD4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78E0BE12B43FCC05CCFBAFD7E6DF6B /* CameraViewController.swift */; };
-		5691FB7517AFEC2CF2F7FB3E6D79697B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0DC440C4222F19B4AC6A39E66CFCFA /* Foundation.framework */; };
-		5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E69B59A7CD06E4D5A31E8F39B7D8AE /* Data+FileResource.swift */; };
-		65E68E8FDBD28A1305BCFF919971DBE1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA32DD00A9CE92B22AB460560C50CD9 /* State.swift */; };
-		65F589CDA610DC5F5100B39911A8AC8D /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */; };
-		680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AFAD0AB601AA62CC51AD73D20EE08 /* FileResource.swift */; };
-		71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EC4B11D9E56A181DC9BE7F023143A /* UITableView+ReuseIdentifierProtocol.swift */; };
-		7701748B6CF20A1556E31069311A1CBE /* Pods-TooHealthy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F61436E34C000303D97049AFB6CC8906 /* Pods-TooHealthy-dummy.m */; };
-		77049B4D68394D240853DF8EBE9BB42F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E89363DF06C8221F00CDB4BCB91E7 /* Functions.swift */; };
-		787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD4588D58906B06393F9C6A0ECC3D8E /* NibResource.swift */; };
-		78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4623CF628AD3AC8679E16B00161DE2 /* UIStoryboard+StoryboardResource.swift */; };
-		7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A284F7CAB7A686DB1071069D54EF8 /* Bundle+FileResource.swift */; };
-		7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C562C6F46224880A99F366DB9743915F /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2B956671A265CBB6CF83F9907BDAF /* R.swift.Library-dummy.m */; };
-		8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA39EEE8735515C19F0B47E104EE7C6 /* StringResource.swift */; };
-		8EF2805338469B87D08850B8BD5AAABB /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 636E270A2A686329F5BEACEE58703CBE /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		925D6D3D62BE0243E63A34FE8A239DEE /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE6171766056182B243CFC58C8AF3D1 /* VideoPermissionService.swift */; };
-		93EAE51A99C3AF03107F89BDFA4F2A72 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FAC4A6F9F8EE39A2AC242D5C1D9F16 /* BarcodeScannerViewController.swift */; };
-		9413F49B96D1BDA38C55039C90AB5611 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422BE7EE92DC8290AA5DE4B9FEB8CF61 /* MessageViewController.swift */; };
-		9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF435487F6C071AB6C86E8301AB20089 /* UIColor+ColorResource.swift */; };
-		A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717261444063849BC875B29E0B827209 /* NibResource+UIKit.swift */; };
-		AC929DB86D6C32A3E9DAD482D703F02C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80ED7A3D19C791675B92A5B47AAE4D58 /* UIKit.framework */; };
-		AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F58C36B5BEFE91C7BBBB4C6A3C0020 /* StoryboardResource.swift */; };
-		AEA4C449668277F5A67C436E4AD07889 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7D2347736F6E4D905805CB2414D33 /* cameraRotate@3x.png */; };
-		AF8A2260E2E940DDF28FAECB7BC2F713 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A6C95AC16103AFB2003B0C9C02CAD7 /* UIViewController+Extensions.swift */; };
-		B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DEB5EB759E845343A68F4729708D47 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
-		B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546955BDC9AD7720B3BA4443FBAA29B /* Validatable.swift */; };
-		B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078878136B815AD489E2D4DEE26F2932 /* StoryboardResourceWithInitialController+UIKit.swift */; };
-		B4F3C8C09F756663B160A62B049A0B2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B01D02F648FC21D052A90B4A54D5A6 /* AVFoundation.framework */; };
-		B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003845E7DD04EE08577B4492BD164A12 /* ImageResource.swift */; };
-		BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88448B6BC0AC465B8C166C110D5E0F /* Identifier.swift */; };
-		DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BBEF44E392F8BAC76DCEDED6A82F08 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
-		DDF65C879E19115A4DA09F87120E321B /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C21FA0B1F6C11E0CBB0E3CC7A0488FE1 /* flashOn@3x.png */; };
-		E00918185837C26D360277A53C6BEC8F /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B7966C1AE95DB27E7A96B6FE76C9E4 /* info@3x.png */; };
-		E065D1AE1EC696B54847B2B5288C5C14 /* Pods-TooHealthy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFECBF380976934554BD7C168D194275 /* Pods-TooHealthy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9AADF698C1E5EAC536649D0D9A7A0 /* FontResource.swift */; };
-		EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC98D583AEDEA0165887186776CC45 /* UIFont+FontResource.swift */; };
-		EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE15F2E7FB5FE94687C7008AE429044 /* ColorResource.swift */; };
-		EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5E2ED4FABC00AE3040F3BA67C44940 /* StoryboardViewControllerResource.swift */; };
+		0531D2ECFAED1869832D1960366BF51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDFAA274756D474852A4ECA9E8056E /* ReuseIdentifierProtocol.swift */; };
+		0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D76B08C13C910EC3A08BE244E2F8BBD /* StoryboardSegueIdentifierProtocol.swift */; };
+		13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707770BF99D28FFCE1EEB8DDA13E405 /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886EAB451E01542F3DE81329298C892 /* UIImage+ImageResource.swift */; };
+		273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CFD916A2B7AA1536AA5D63D569261 /* UINib+NibResource.swift */; };
+		28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364A7B702DF757E569C4A30B0691941 /* UIViewController+NibResource.swift */; };
+		37224A3269402BBF4C7848FC818C616C /* swiftScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 706AB7993E14F3557864B7AC3CF2D7DA /* swiftScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F21BD97AA0A9CA21925353325D8E4EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFBFA197E86C6CD954B0893391DD056 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7452784F41741558CFF41BAD96B7D3 /* Data+FileResource.swift */; };
+		6191708B57CC850877530008D7442733 /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B2FC93696F9624819456EB9025837 /* LBXScanNetAnimation.swift */; };
+		680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA8CE1919A9049C3E1A0D8A5F0D838 /* FileResource.swift */; };
+		6E32D2C20A7C7351DDEE429E724EA361 /* swiftScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B977C41BB70FCFA261B49643B46C99 /* swiftScan-dummy.m */; };
+		71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E69E4915BEB26C0900488FCB1CA502 /* UITableView+ReuseIdentifierProtocol.swift */; };
+		725DAC884F98F35D94DEC8AE7B693BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		72FDCF89CC3AE1C482A62897EEEB5889 /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473EB8466C06E319F82D4CF0940E47D /* LBXScanView.swift */; };
+		787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A825AD46BC841F253F7CAC25DCA48 /* NibResource.swift */; };
+		78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6FD189A46CD8D65422307756D15CE /* UIStoryboard+StoryboardResource.swift */; };
+		7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCC9BB1D8142C2EDF2242F7CEE2318 /* Bundle+FileResource.swift */; };
+		7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C04B14A2E760B7547E514DF353419D70 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EC14DE320AD7895DB20001945400DA /* R.swift.Library-dummy.m */; };
+		8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA16A1C18F1E48E797BFC2667826012 /* StringResource.swift */; };
+		955E24851730FCAC44C50105BF45C3C3 /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1712451A37B4E84B08A2E20317461 /* LBXScanWrapper.swift */; };
+		9A014961FB275E3D0B7104A907E1F09B /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37491554B9FFDB1378C16C96F670EE /* LBXScanLineAnimation.swift */; };
+		9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D7AE834187217F564AF638521C495E /* UIColor+ColorResource.swift */; };
+		A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BFA1EBBF80FF33BCB35E976E4E8E09 /* NibResource+UIKit.swift */; };
+		AAA71DE8BCFDEF9081F0095D2B219FF5 /* Pods-TooHealthy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFECBF380976934554BD7C168D194275 /* Pods-TooHealthy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9920E3AECF8D60DC7522FF7D311E8 /* StoryboardResource.swift */; };
+		B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C588462F32D611367233AF36719FC47 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E079309BA2112A7E73DF4ED4229F9 /* Validatable.swift */; };
+		B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7A107E845C5EF05C7CE8EE91417AC /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23652FF7270EA097176326779AD50E /* ImageResource.swift */; };
+		BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B313CE795CE7AD7DD3DC4C3D5BE32 /* Identifier.swift */; };
+		BFCDC7BBD4CAFBE703F3F18CF7AD57DB /* LBXPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE212D631EB3DC497C0E393E7315FAD2 /* LBXPermissions.swift */; };
+		BFE02E0504ABBC6B0FB385F23A1BE87A /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF6E5C0E260D4A3E630C668D035398 /* LBXScanViewStyle.swift */; };
+		DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CC24838266E5C486940BFDF5AF8BB /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D037A606C6AF3C0C9EE1FAF3BF510AD /* FontResource.swift */; };
+		EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8CC8FA24874C70177C643F31B046F7 /* UIFont+FontResource.swift */; };
+		EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37617AFAC382D15FD333E35CA6895A /* ColorResource.swift */; };
+		EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A803FD79BABBE8875B5D4DEBE219915 /* StoryboardViewControllerResource.swift */; };
+		FE4E8E8B69C6E237213AE23EC1C8D0D9 /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327AA5E3B39EE2FABABD30C466B2E2B1 /* LBXScanViewController.swift */; };
+		FF5E59C962C3D153E2F2A0DCA5D352D5 /* Pods-TooHealthy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F61436E34C000303D97049AFB6CC8906 /* Pods-TooHealthy-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07E98DA626231FF332AF2D2CD71C3B1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
-			remoteInfo = R.swift;
-		};
 		1F0ACA2E2CAC4C39619D3CD6F4CDA62F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -96,122 +73,102 @@
 			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
 			remoteInfo = R.swift.Library;
 		};
-		37FAC825F60F91F8544649E10E80EC3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02E136446D8E897681981873306A783A;
-			remoteInfo = "BarcodeScanner-BarcodeScanner";
-		};
-		67F27D0E2EB728772D4DB52CBB05BA6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39D656AC88E303625E9AA42D19C21D75;
-			remoteInfo = BarcodeScanner;
-		};
-		9B060A121A5ABC1DA9A2EBAC8D6AF475 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2598A00DF974C904143778EDC46CC0E5;
-			remoteInfo = "BarcodeScanner-Localization";
-		};
-		A795AB0BBC20E932D11B074F99FB47DB /* PBXContainerItemProxy */ = {
+		50D1701DF4174A330DE51DEC080C9117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
 			remoteInfo = R.swift.Library;
 		};
+		77AC3A51CE00ECAF5F3DF4FC43BE3710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
+			remoteInfo = R.swift;
+		};
+		F5261E4FC9EFAFA6B83417AE8248711D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C319F440AD1ED9F637FA07994F94A5;
+			remoteInfo = swiftScan;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003845E7DD04EE08577B4492BD164A12 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
-		02857DC8E00FFD9646A5128765A891FB /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TooHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03F9AADF698C1E5EAC536649D0D9A7A0 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
-		04A37C5027C095A3B4F800326279A1D6 /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
-		078878136B815AD489E2D4DEE26F2932 /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
-		0A4BCD700BEC4D63D90E9CC04F288DAB /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0C2B2E3EDA3D2078B21432D6BDE418F8 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
-		119CA529AC2F00C396068811C42BBEBF /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
-		19B7966C1AE95DB27E7A96B6FE76C9E4 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
-		1A1DAE0DFD75C7C088A93BC44BB48C76 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
-		1FB0245C3F83DE5C67CC4AFC7238DAFA /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
-		20BD2746936D260E39E26794D6FB3B45 /* BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		25FAC4A6F9F8EE39A2AC242D5C1D9F16 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		02857DC8E00FFD9646A5128765A891FB /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TooHealthy.framework; path = "Pods-TooHealthy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045B2FC93696F9624819456EB9025837 /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanNetAnimation.swift; path = Source/LBXScanNetAnimation.swift; sourceTree = "<group>"; };
+		129CC24838266E5C486940BFDF5AF8BB /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		12ECC45365F1B859E18595A8721B0F36 /* swiftScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "swiftScan-Info.plist"; sourceTree = "<group>"; };
+		18E6FD189A46CD8D65422307756D15CE /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		1D76B08C13C910EC3A08BE244E2F8BBD /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		24E69E4915BEB26C0900488FCB1CA502 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		26EC14DE320AD7895DB20001945400DA /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
 		296FBF1C792E161CC38B097C5F70E190 /* Pods-TooHealthy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TooHealthy-frameworks.sh"; sourceTree = "<group>"; };
-		2BB2B956671A265CBB6CF83F9907BDAF /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
-		2C0DC440C4222F19B4AC6A39E66CFCFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2978C8237C34362C148E697943D83222 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		2AB985995F7D6ED38151860D8B809577 /* swiftScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = swiftScan.framework; path = swiftScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAB1C8680CB08C745C1D9207EAE6A41 /* Pods-TooHealthy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TooHealthy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31E442C44FFF2E156200636D89522707 /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
-		357918F9287D4B5101BADA1EF5C154D1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
-		3C7194AA6C0C034A81D2A045C6089B00 /* R.swift.Library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift.Library-Info.plist"; sourceTree = "<group>"; };
-		3DF7D2347736F6E4D905805CB2414D33 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
-		422BE7EE92DC8290AA5DE4B9FEB8CF61 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
-		48E69B59A7CD06E4D5A31E8F39B7D8AE /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
-		4E88448B6BC0AC465B8C166C110D5E0F /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
-		5038CD20A160E7F9CE487931BB5BD04B /* R.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.xcconfig; sourceTree = "<group>"; };
-		53B01D02F648FC21D052A90B4A54D5A6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		5546955BDC9AD7720B3BA4443FBAA29B /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
-		5F5E2ED4FABC00AE3040F3BA67C44940 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
-		636E270A2A686329F5BEACEE58703CBE /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
-		6BA39EEE8735515C19F0B47E104EE7C6 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
-		6F21932FE60A8BA02DE6754ADB8DFA68 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
-		70AD011682128C83A4E7A7A2F6D596FC /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
-		717261444063849BC875B29E0B827209 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
-		723A8DF1ED78D8398D5A01773BEEDECC /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
-		74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		75983A584E04494668D3219F27FE3BA3 /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
-		78AB81638D872C74A9D01BCB2DF1E247 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
-		7AE7B05211EB0569509AEEFA33219831 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7C4623CF628AD3AC8679E16B00161DE2 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		327AA5E3B39EE2FABABD30C466B2E2B1 /* LBXScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanViewController.swift; path = Source/LBXScanViewController.swift; sourceTree = "<group>"; };
+		32D7AE834187217F564AF638521C495E /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		485CFD916A2B7AA1536AA5D63D569261 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		48DDFAA274756D474852A4ECA9E8056E /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		4A803FD79BABBE8875B5D4DEBE219915 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		4ECA8CE1919A9049C3E1A0D8A5F0D838 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		532B313CE795CE7AD7DD3DC4C3D5BE32 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		62328D1749BF54D5D4EBAD368E404D8E /* swiftScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = swiftScan.modulemap; sourceTree = "<group>"; };
+		69A1712451A37B4E84B08A2E20317461 /* LBXScanWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanWrapper.swift; path = Source/LBXScanWrapper.swift; sourceTree = "<group>"; };
+		6C8CC8FA24874C70177C643F31B046F7 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		6DFBFA197E86C6CD954B0893391DD056 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		706AB7993E14F3557864B7AC3CF2D7DA /* swiftScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftScan-umbrella.h"; sourceTree = "<group>"; };
+		7473EB8466C06E319F82D4CF0940E47D /* LBXScanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanView.swift; path = Source/LBXScanView.swift; sourceTree = "<group>"; };
+		797B075C9005247A4EA0630506513B64 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		7AA16A1C18F1E48E797BFC2667826012 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		7E37491554B9FFDB1378C16C96F670EE /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanLineAnimation.swift; path = Source/LBXScanLineAnimation.swift; sourceTree = "<group>"; };
 		7FFAB400171688F112F5AB4AD726C6FA /* Pods-TooHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TooHealthy.debug.xcconfig"; sourceTree = "<group>"; };
-		8094068CB5DE95354561EE13768E66C2 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
-		80ED7A3D19C791675B92A5B47AAE4D58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		837F70772C3308043023AEEE3BA87867 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		81C398B64DCBA8B211089821B62AE108 /* swiftScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = swiftScan.xcconfig; sourceTree = "<group>"; };
+		8364A7B702DF757E569C4A30B0691941 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
 		876EBAD722E3586D941E06034811769B /* Pods-TooHealthy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TooHealthy-acknowledgements.plist"; sourceTree = "<group>"; };
-		89DEB5EB759E845343A68F4729708D47 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
-		8BA32DD00A9CE92B22AB460560C50CD9 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FE15F2E7FB5FE94687C7008AE429044 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
-		A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A55B3B4ADD0BA4B4102FE93A166C168D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AFE6171766056182B243CFC58C8AF3D1 /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
+		889D2D10968988601A1AF06E2666395F /* swiftScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftScan-prefix.pch"; sourceTree = "<group>"; };
+		8B7452784F41741558CFF41BAD96B7D3 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		8D037A606C6AF3C0C9EE1FAF3BF510AD /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		9C588462F32D611367233AF36719FC47 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7B977C41BB70FCFA261B49643B46C99 /* swiftScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swiftScan-dummy.m"; sourceTree = "<group>"; };
+		A82A825AD46BC841F253F7CAC25DCA48 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		A886EAB451E01542F3DE81329298C892 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
 		AFECBF380976934554BD7C168D194275 /* Pods-TooHealthy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TooHealthy-umbrella.h"; sourceTree = "<group>"; };
-		B20EC4B11D9E56A181DC9BE7F023143A /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.xcconfig; sourceTree = "<group>"; };
-		BEC6C21E15EE81E06A1B7A6F91300EB7 /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		C10E89363DF06C8221F00CDB4BCB91E7 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
-		C11A284F7CAB7A686DB1071069D54EF8 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
-		C1F58C36B5BEFE91C7BBBB4C6A3C0020 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
-		C21FA0B1F6C11E0CBB0E3CC7A0488FE1 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
-		C487276CED28F3C7266666A5A4CD5A05 /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
-		C562C6F46224880A99F366DB9743915F /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
-		C67286DA8ABBF7FEADD9818602D64D53 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		C7B38AD83C274D6E9113F126DEF0A2A6 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
-		C8A6C95AC16103AFB2003B0C9C02CAD7 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBD4588D58906B06393F9C6A0ECC3D8E /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
-		CC11CEC2D71A5DC4584BB7DEB45679FE /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
-		CDD1DD65B25707DC19486AE15FA070DF /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D15AFAD0AB601AA62CC51AD73D20EE08 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		B0BF6E5C0E260D4A3E630C668D035398 /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXScanViewStyle.swift; path = Source/LBXScanViewStyle.swift; sourceTree = "<group>"; };
+		C04B14A2E760B7547E514DF353419D70 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		C08E079309BA2112A7E73DF4ED4229F9 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		C4FCC9BB1D8142C2EDF2242F7CEE2318 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		C707770BF99D28FFCE1EEB8DDA13E405 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54969B6A53D9A8DA5E8AE22FD2FCB16 /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		D5BFA1EBBF80FF33BCB35E976E4E8E09 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
 		D6E2DFF47B5D9038F9A6ECC24F15C73A /* Pods-TooHealthy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TooHealthy-Info.plist"; sourceTree = "<group>"; };
-		DAF45E9E444A508A0F84BDA61F4B3D10 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DF435487F6C071AB6C86E8301AB20089 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		DC37617AFAC382D15FD333E35CA6895A /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
 		E227ABEDF734F7E72A23506AAFCE302B /* Pods-TooHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TooHealthy.release.xcconfig"; sourceTree = "<group>"; };
-		E26233A147875A5C163F0BB011C0FE40 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
-		E83A9F5D05A00FA1B297902D8EB34679 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		EF78E0BE12B43FCC05CCFBAFD7E6DF6B /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
+		E6D7A107E845C5EF05C7CE8EE91417AC /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		E6F2EF7A374F3CD38167F4E0A60D65C9 /* R.swift.Library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift.Library-Info.plist"; sourceTree = "<group>"; };
+		E9D9920E3AECF8D60DC7522FF7D311E8 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		EE212D631EB3DC497C0E393E7315FAD2 /* LBXPermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBXPermissions.swift; path = Source/LBXPermissions.swift; sourceTree = "<group>"; };
+		EE23652FF7270EA097176326779AD50E /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
 		F0DCCBEC5350DF09D40DF86877F6B4B0 /* Pods-TooHealthy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TooHealthy.modulemap"; sourceTree = "<group>"; };
-		F1BBEF44E392F8BAC76DCEDED6A82F08 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
-		F31A665AB7CC98A0BB47630686FC0907 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		F61436E34C000303D97049AFB6CC8906 /* Pods-TooHealthy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TooHealthy-dummy.m"; sourceTree = "<group>"; };
-		F7FC98D583AEDEA0165887186776CC45 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		FABAEC835E5821A351D6B6AF0B43E637 /* R.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1640D6554BF147C81BC91C14DE4507AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725DAC884F98F35D94DEC8AE7B693BDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30DDF4B40C454C038371AE37121BF17A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,106 +177,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		393030ED09644D4BCA071F639095B152 /* Frameworks */ = {
+		8AA7B13FB30910093D985533B3602444 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		625E0E0CBF10B9C0878AEF34E097F397 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84890739309D2319FD392FCE5C7ED82A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5691FB7517AFEC2CF2F7FB3E6D79697B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0ED06BCB1ADD6130307FACC52150102 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4F3C8C09F756663B160A62B049A0B2E /* AVFoundation.framework in Frameworks */,
-				09BEA257F62431C7B5B565E8FA0BF5B0 /* Foundation.framework in Frameworks */,
-				AC929DB86D6C32A3E9DAD482D703F02C /* UIKit.framework in Frameworks */,
+				3F21BD97AA0A9CA21925353325D8E4EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+		028A37DFA509A1297FDD435E7725AC56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DF8010B600FC99A0DCA5086146A2B24B /* iOS */,
+				1EC007684C93CF01565769427586ED1D /* R.swift */,
+				48DC3416236ED86A2256B285A6B1DBBE /* R.swift.Library */,
+				FD9A1EB7C2AA61358E6A88C79017F019 /* swiftScan */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		04A4A021F6CA7ED4EF4130E8AD54B9F7 /* R.swift.Library */ = {
+		1EC007684C93CF01565769427586ED1D /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
-				C11A284F7CAB7A686DB1071069D54EF8 /* Bundle+FileResource.swift */,
-				9FE15F2E7FB5FE94687C7008AE429044 /* ColorResource.swift */,
-				48E69B59A7CD06E4D5A31E8F39B7D8AE /* Data+FileResource.swift */,
-				D15AFAD0AB601AA62CC51AD73D20EE08 /* FileResource.swift */,
-				03F9AADF698C1E5EAC536649D0D9A7A0 /* FontResource.swift */,
-				4E88448B6BC0AC465B8C166C110D5E0F /* Identifier.swift */,
-				003845E7DD04EE08577B4492BD164A12 /* ImageResource.swift */,
-				CBD4588D58906B06393F9C6A0ECC3D8E /* NibResource.swift */,
-				717261444063849BC875B29E0B827209 /* NibResource+UIKit.swift */,
-				1A1DAE0DFD75C7C088A93BC44BB48C76 /* ReuseIdentifierProtocol.swift */,
-				C1F58C36B5BEFE91C7BBBB4C6A3C0020 /* StoryboardResource.swift */,
-				078878136B815AD489E2D4DEE26F2932 /* StoryboardResourceWithInitialController+UIKit.swift */,
-				0C2B2E3EDA3D2078B21432D6BDE418F8 /* StoryboardSegueIdentifierProtocol.swift */,
-				5F5E2ED4FABC00AE3040F3BA67C44940 /* StoryboardViewControllerResource.swift */,
-				6BA39EEE8735515C19F0B47E104EE7C6 /* StringResource.swift */,
-				119CA529AC2F00C396068811C42BBEBF /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
-				C67286DA8ABBF7FEADD9818602D64D53 /* UICollectionView+ReuseIdentifierProtocol.swift */,
-				DF435487F6C071AB6C86E8301AB20089 /* UIColor+ColorResource.swift */,
-				F7FC98D583AEDEA0165887186776CC45 /* UIFont+FontResource.swift */,
-				8094068CB5DE95354561EE13768E66C2 /* UIImage+ImageResource.swift */,
-				723A8DF1ED78D8398D5A01773BEEDECC /* UINib+NibResource.swift */,
-				7C4623CF628AD3AC8679E16B00161DE2 /* UIStoryboard+StoryboardResource.swift */,
-				89DEB5EB759E845343A68F4729708D47 /* UIStoryboard+StoryboardViewControllerResource.swift */,
-				B20EC4B11D9E56A181DC9BE7F023143A /* UITableView+ReuseIdentifierProtocol.swift */,
-				E26233A147875A5C163F0BB011C0FE40 /* UIViewController+NibResource.swift */,
-				F1BBEF44E392F8BAC76DCEDED6A82F08 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
-				5546955BDC9AD7720B3BA4443FBAA29B /* Validatable.swift */,
-				5EAEBD6B3E1E98BDA7A3B49AFC051FC5 /* Support Files */,
+				A53C7E180B8A38D58CBFCAB56469EC14 /* Support Files */,
 			);
-			path = R.swift.Library;
-			sourceTree = "<group>";
-		};
-		22474BBEE14AEA4F80773759F24DCD91 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				31E442C44FFF2E156200636D89522707 /* BarcodeScanner.modulemap */,
-				B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */,
-				C487276CED28F3C7266666A5A4CD5A05 /* BarcodeScanner-dummy.m */,
-				20BD2746936D260E39E26794D6FB3B45 /* BarcodeScanner-Info.plist */,
-				70AD011682128C83A4E7A7A2F6D596FC /* BarcodeScanner-prefix.pch */,
-				636E270A2A686329F5BEACEE58703CBE /* BarcodeScanner-umbrella.h */,
-				BEC6C21E15EE81E06A1B7A6F91300EB7 /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */,
-				E83A9F5D05A00FA1B297902D8EB34679 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BarcodeScanner";
-			sourceTree = "<group>";
-		};
-		3183AEF2B2F49DA71C59BCE5ECF9FC7D /* R.swift */ = {
-			isa = PBXGroup;
-			children = (
-				9A3D80286C11843A16E56BE00C0CFC3C /* Support Files */,
-			);
+			name = R.swift;
 			path = R.swift;
+			sourceTree = "<group>";
+		};
+		25EBD26231A888AD0F909068A076F70D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02857DC8E00FFD9646A5128765A891FB /* Pods_TooHealthy.framework */,
+				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
+				2AB985995F7D6ED38151860D8B809577 /* swiftScan.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3946617B28511EC0D50C002D61EEFE7D /* Pods-TooHealthy */ = {
@@ -339,92 +234,90 @@
 			path = "Target Support Files/Pods-TooHealthy";
 			sourceTree = "<group>";
 		};
-		3F075D4B93B47B36855A8A51983A6489 /* Pods */ = {
+		48DC3416236ED86A2256B285A6B1DBBE /* R.swift.Library */ = {
 			isa = PBXGroup;
 			children = (
-				682EB0C0D6B242984CD6B5A5F094F1C0 /* BarcodeScanner */,
-				3183AEF2B2F49DA71C59BCE5ECF9FC7D /* R.swift */,
-				04A4A021F6CA7ED4EF4130E8AD54B9F7 /* R.swift.Library */,
+				C4FCC9BB1D8142C2EDF2242F7CEE2318 /* Bundle+FileResource.swift */,
+				DC37617AFAC382D15FD333E35CA6895A /* ColorResource.swift */,
+				8B7452784F41741558CFF41BAD96B7D3 /* Data+FileResource.swift */,
+				4ECA8CE1919A9049C3E1A0D8A5F0D838 /* FileResource.swift */,
+				8D037A606C6AF3C0C9EE1FAF3BF510AD /* FontResource.swift */,
+				532B313CE795CE7AD7DD3DC4C3D5BE32 /* Identifier.swift */,
+				EE23652FF7270EA097176326779AD50E /* ImageResource.swift */,
+				A82A825AD46BC841F253F7CAC25DCA48 /* NibResource.swift */,
+				D5BFA1EBBF80FF33BCB35E976E4E8E09 /* NibResource+UIKit.swift */,
+				48DDFAA274756D474852A4ECA9E8056E /* ReuseIdentifierProtocol.swift */,
+				E9D9920E3AECF8D60DC7522FF7D311E8 /* StoryboardResource.swift */,
+				E6D7A107E845C5EF05C7CE8EE91417AC /* StoryboardResourceWithInitialController+UIKit.swift */,
+				1D76B08C13C910EC3A08BE244E2F8BBD /* StoryboardSegueIdentifierProtocol.swift */,
+				4A803FD79BABBE8875B5D4DEBE219915 /* StoryboardViewControllerResource.swift */,
+				7AA16A1C18F1E48E797BFC2667826012 /* StringResource.swift */,
+				6DFBFA197E86C6CD954B0893391DD056 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				C707770BF99D28FFCE1EEB8DDA13E405 /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				32D7AE834187217F564AF638521C495E /* UIColor+ColorResource.swift */,
+				6C8CC8FA24874C70177C643F31B046F7 /* UIFont+FontResource.swift */,
+				A886EAB451E01542F3DE81329298C892 /* UIImage+ImageResource.swift */,
+				485CFD916A2B7AA1536AA5D63D569261 /* UINib+NibResource.swift */,
+				18E6FD189A46CD8D65422307756D15CE /* UIStoryboard+StoryboardResource.swift */,
+				9C588462F32D611367233AF36719FC47 /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				24E69E4915BEB26C0900488FCB1CA502 /* UITableView+ReuseIdentifierProtocol.swift */,
+				8364A7B702DF757E569C4A30B0691941 /* UIViewController+NibResource.swift */,
+				129CC24838266E5C486940BFDF5AF8BB /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				C08E079309BA2112A7E73DF4ED4229F9 /* Validatable.swift */,
+				9ED53755478D08EA61FC7D34F12B576D /* Support Files */,
 			);
-			name = Pods;
+			name = R.swift.Library;
+			path = R.swift.Library;
 			sourceTree = "<group>";
 		};
-		536C3D6D517C455A41F47FACD41BE5E2 /* Resources */ = {
+		9ED53755478D08EA61FC7D34F12B576D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DF7D2347736F6E4D905805CB2414D33 /* cameraRotate@3x.png */,
-				1FB0245C3F83DE5C67CC4AFC7238DAFA /* flashOff@3x.png */,
-				C21FA0B1F6C11E0CBB0E3CC7A0488FE1 /* flashOn@3x.png */,
-				19B7966C1AE95DB27E7A96B6FE76C9E4 /* info@3x.png */,
-				E3C0DDBC37139D2487CCFF8BB2E34DE4 /* Localizable.strings */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5EAEBD6B3E1E98BDA7A3B49AFC051FC5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				837F70772C3308043023AEEE3BA87867 /* R.swift.Library.modulemap */,
-				75983A584E04494668D3219F27FE3BA3 /* R.swift.Library.xcconfig */,
-				2BB2B956671A265CBB6CF83F9907BDAF /* R.swift.Library-dummy.m */,
-				3C7194AA6C0C034A81D2A045C6089B00 /* R.swift.Library-Info.plist */,
-				78AB81638D872C74A9D01BCB2DF1E247 /* R.swift.Library-prefix.pch */,
-				C562C6F46224880A99F366DB9743915F /* R.swift.Library-umbrella.h */,
+				2978C8237C34362C148E697943D83222 /* R.swift.Library.modulemap */,
+				D54969B6A53D9A8DA5E8AE22FD2FCB16 /* R.swift.Library.xcconfig */,
+				26EC14DE320AD7895DB20001945400DA /* R.swift.Library-dummy.m */,
+				E6F2EF7A374F3CD38167F4E0A60D65C9 /* R.swift.Library-Info.plist */,
+				797B075C9005247A4EA0630506513B64 /* R.swift.Library-prefix.pch */,
+				C04B14A2E760B7547E514DF353419D70 /* R.swift.Library-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/R.swift.Library";
 			sourceTree = "<group>";
 		};
-		682EB0C0D6B242984CD6B5A5F094F1C0 /* BarcodeScanner */ = {
+		A53C7E180B8A38D58CBFCAB56469EC14 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6F21932FE60A8BA02DE6754ADB8DFA68 /* AVMetadataObject+Extensions.swift */,
-				25FAC4A6F9F8EE39A2AC242D5C1D9F16 /* BarcodeScannerViewController.swift */,
-				EF78E0BE12B43FCC05CCFBAFD7E6DF6B /* CameraViewController.swift */,
-				CC11CEC2D71A5DC4584BB7DEB45679FE /* FocusViewType.swift */,
-				C10E89363DF06C8221F00CDB4BCB91E7 /* Functions.swift */,
-				04A37C5027C095A3B4F800326279A1D6 /* HeaderViewController.swift */,
-				422BE7EE92DC8290AA5DE4B9FEB8CF61 /* MessageViewController.swift */,
-				F31A665AB7CC98A0BB47630686FC0907 /* NSLayoutConstraint+Extensions.swift */,
-				8BA32DD00A9CE92B22AB460560C50CD9 /* State.swift */,
-				C7B38AD83C274D6E9113F126DEF0A2A6 /* TorchMode.swift */,
-				357918F9287D4B5101BADA1EF5C154D1 /* UIView+Extensions.swift */,
-				C8A6C95AC16103AFB2003B0C9C02CAD7 /* UIViewController+Extensions.swift */,
-				AFE6171766056182B243CFC58C8AF3D1 /* VideoPermissionService.swift */,
-				536C3D6D517C455A41F47FACD41BE5E2 /* Resources */,
-				22474BBEE14AEA4F80773759F24DCD91 /* Support Files */,
-			);
-			path = BarcodeScanner;
-			sourceTree = "<group>";
-		};
-		9A3D80286C11843A16E56BE00C0CFC3C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5038CD20A160E7F9CE487931BB5BD04B /* R.swift.xcconfig */,
+				FABAEC835E5821A351D6B6AF0B43E637 /* R.swift.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/R.swift";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				3F075D4B93B47B36855A8A51983A6489 /* Pods */,
-				F92F4FE3C912B69FC5CE0E322AA22CD7 /* Products */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				028A37DFA509A1297FDD435E7725AC56 /* Pods */,
+				25EBD26231A888AD0F909068A076F70D /* Products */,
 				F070E1520413C760766F61729BC7F239 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DF8010B600FC99A0DCA5086146A2B24B /* iOS */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53B01D02F648FC21D052A90B4A54D5A6 /* AVFoundation.framework */,
-				2C0DC440C4222F19B4AC6A39E66CFCFA /* Foundation.framework */,
-				80ED7A3D19C791675B92A5B47AAE4D58 /* UIKit.framework */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F070E1520413C760766F61729BC7F239 /* Targets Support Files */ = {
@@ -435,34 +328,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F92F4FE3C912B69FC5CE0E322AA22CD7 /* Products */ = {
+		FD9A1EB7C2AA61358E6A88C79017F019 /* swiftScan */ = {
 			isa = PBXGroup;
 			children = (
-				A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */,
-				CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */,
-				74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */,
-				02857DC8E00FFD9646A5128765A891FB /* Pods_TooHealthy.framework */,
-				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
+				EE212D631EB3DC497C0E393E7315FAD2 /* LBXPermissions.swift */,
+				7E37491554B9FFDB1378C16C96F670EE /* LBXScanLineAnimation.swift */,
+				045B2FC93696F9624819456EB9025837 /* LBXScanNetAnimation.swift */,
+				7473EB8466C06E319F82D4CF0940E47D /* LBXScanView.swift */,
+				327AA5E3B39EE2FABABD30C466B2E2B1 /* LBXScanViewController.swift */,
+				B0BF6E5C0E260D4A3E630C668D035398 /* LBXScanViewStyle.swift */,
+				69A1712451A37B4E84B08A2E20317461 /* LBXScanWrapper.swift */,
+				FEA1FB6FFE1AEC6AF580F092F04C124D /* Support Files */,
 			);
-			name = Products;
+			name = swiftScan;
+			path = swiftScan;
+			sourceTree = "<group>";
+		};
+		FEA1FB6FFE1AEC6AF580F092F04C124D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62328D1749BF54D5D4EBAD368E404D8E /* swiftScan.modulemap */,
+				81C398B64DCBA8B211089821B62AE108 /* swiftScan.xcconfig */,
+				A7B977C41BB70FCFA261B49643B46C99 /* swiftScan-dummy.m */,
+				12ECC45365F1B859E18595A8721B0F36 /* swiftScan-Info.plist */,
+				889D2D10968988601A1AF06E2666395F /* swiftScan-prefix.pch */,
+				706AB7993E14F3557864B7AC3CF2D7DA /* swiftScan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/swiftScan";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9B3A01ECFDCCF94430499A98168E805F /* Headers */ = {
+		2EAC1A1B6ACF80F8145098A0FED66F86 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E065D1AE1EC696B54847B2B5288C5C14 /* Pods-TooHealthy-umbrella.h in Headers */,
+				37224A3269402BBF4C7848FC818C616C /* swiftScan-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF7E0ABAC8B049BCBAE417D931AB2E3C /* Headers */ = {
+		AEAB68A271909D7801F85316BBBA5684 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF2805338469B87D08850B8BD5AAABB /* BarcodeScanner-umbrella.h in Headers */,
+				AAA71DE8BCFDEF9081F0095D2B219FF5 /* Pods-TooHealthy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,75 +388,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */ = {
+		53C319F440AD1ED9F637FA07994F94A5 /* swiftScan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BC23F97FDF1EB24F1E66BE6E3A89B72 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */;
+			buildConfigurationList = B43352CA0AE3F0C2EEB20BE398367D65 /* Build configuration list for PBXNativeTarget "swiftScan" */;
 			buildPhases = (
-				27E41EDCB6AF92800EA87BF878403294 /* Sources */,
-				625E0E0CBF10B9C0878AEF34E097F397 /* Frameworks */,
-				0BFDD3265361920127A2F57626AF1959 /* Resources */,
+				2EAC1A1B6ACF80F8145098A0FED66F86 /* Headers */,
+				D283AB47CF36316A0A5B9BB94689B76C /* Sources */,
+				1640D6554BF147C81BC91C14DE4507AE /* Frameworks */,
+				74031EA66F36DDC063C747057EF498C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "BarcodeScanner-BarcodeScanner";
-			productName = "BarcodeScanner-BarcodeScanner";
-			productReference = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E7B7DB809EF077BA08E749AB58485ED /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */;
-			buildPhases = (
-				8EC3D7ADC4CA4BF5481AB17CFC2924E1 /* Sources */,
-				393030ED09644D4BCA071F639095B152 /* Frameworks */,
-				E632E95170E48CA47BE5223701FF9058 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BarcodeScanner-Localization";
-			productName = "BarcodeScanner-Localization";
-			productReference = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 642163D3FC89EC04AC75ECACA0EB0E1E /* Build configuration list for PBXNativeTarget "BarcodeScanner" */;
-			buildPhases = (
-				DF7E0ABAC8B049BCBAE417D931AB2E3C /* Headers */,
-				7CD91FF8C2BDC9D965FAE883A9B165EF /* Sources */,
-				D0ED06BCB1ADD6130307FACC52150102 /* Frameworks */,
-				CB9615C2F10792A5095C961B1164C37D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA49DFF793D46A8A335F4794A253E1BF /* PBXTargetDependency */,
-				3D7F8098D8954950220D00E9B05B2249 /* PBXTargetDependency */,
-			);
-			name = BarcodeScanner;
-			productName = BarcodeScanner;
-			productReference = CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */;
+			name = swiftScan;
+			productName = swiftScan;
+			productReference = 2AB985995F7D6ED38151860D8B809577 /* swiftScan.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5F3D5EAD81AA3F175526C706E6360F3B /* Pods-TooHealthy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 448A44A9445CA0DAC47FDFE584CD42BB /* Build configuration list for PBXNativeTarget "Pods-TooHealthy" */;
+			buildConfigurationList = 7B7BE49BC63DCC49433E946CCE1D756C /* Build configuration list for PBXNativeTarget "Pods-TooHealthy" */;
 			buildPhases = (
-				9B3A01ECFDCCF94430499A98168E805F /* Headers */,
-				5CE6469021E04E8182FDF2D94E31288A /* Sources */,
-				84890739309D2319FD392FCE5C7ED82A /* Frameworks */,
-				1797C5D4FC5B7AF1F11DA22F410CDFF3 /* Resources */,
+				AEAB68A271909D7801F85316BBBA5684 /* Headers */,
+				A614C5ED81CDBED10E85C73F34C5699C /* Sources */,
+				8AA7B13FB30910093D985533B3602444 /* Frameworks */,
+				F0EFAC3F1631237AB97AF9E2780BE16E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDF2E8D6BFC130F44CC11E2248BAD37E /* PBXTargetDependency */,
-				8F808F545ACC7D01DA80C354D34F1D80 /* PBXTargetDependency */,
-				AA13C25F4017928BAF64C01F11B72E9E /* PBXTargetDependency */,
+				51A5E20E3B32AD463A0D1B041152BBDB /* PBXTargetDependency */,
+				7E1178040F02E7BDFA2B770DBE89719B /* PBXTargetDependency */,
+				A5EF9348CF0C61CE650802EB5B00BD3F /* PBXTargetDependency */,
 			);
 			name = "Pods-TooHealthy";
 			productName = "Pods-TooHealthy";
@@ -586,39 +461,22 @@
 			knownRegions = (
 				en,
 				Base,
-				de,
-				fr,
-				"pl-PL",
-				tr,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F92F4FE3C912B69FC5CE0E322AA22CD7 /* Products */;
+			productRefGroup = 25EBD26231A888AD0F909068A076F70D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */,
-				02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */,
-				2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */,
 				5F3D5EAD81AA3F175526C706E6360F3B /* Pods-TooHealthy */,
 				230984053C6652DFF510F450F21C5CF7 /* R.swift */,
 				B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */,
+				53C319F440AD1ED9F637FA07994F94A5 /* swiftScan */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0BFDD3265361920127A2F57626AF1959 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEA4C449668277F5A67C436E4AD07889 /* cameraRotate@3x.png in Resources */,
-				0B087B29DEC4C87B8313DD679515DB1F /* flashOff@3x.png in Resources */,
-				DDF65C879E19115A4DA09F87120E321B /* flashOn@3x.png in Resources */,
-				E00918185837C26D360277A53C6BEC8F /* info@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1797C5D4FC5B7AF1F11DA22F410CDFF3 /* Resources */ = {
+		74031EA66F36DDC063C747057EF498C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,69 +490,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB9615C2F10792A5095C961B1164C37D /* Resources */ = {
+		F0EFAC3F1631237AB97AF9E2780BE16E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F589CDA610DC5F5100B39911A8AC8D /* BarcodeScanner.bundle in Resources */,
-				47C6FDD3E25D259665C8157A8D74250D /* Localization.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E632E95170E48CA47BE5223701FF9058 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17E8F41AD1197DA7F604BC2B0DDC6FB6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		27E41EDCB6AF92800EA87BF878403294 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CE6469021E04E8182FDF2D94E31288A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7701748B6CF20A1556E31069311A1CBE /* Pods-TooHealthy-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CD91FF8C2BDC9D965FAE883A9B165EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50C90E4DF1433624D5805AD2DDC651D3 /* AVMetadataObject+Extensions.swift in Sources */,
-				4CE7E0E266DD512C1267EEAD9DC1258A /* BarcodeScanner-dummy.m in Sources */,
-				93EAE51A99C3AF03107F89BDFA4F2A72 /* BarcodeScannerViewController.swift in Sources */,
-				5357052101DABA8DA6F363DF4144EFD4 /* CameraViewController.swift in Sources */,
-				05519B9665090CCFB57090658A42AC99 /* FocusViewType.swift in Sources */,
-				77049B4D68394D240853DF8EBE9BB42F /* Functions.swift in Sources */,
-				17618A4AA27551F8F40AACCF19CD1599 /* HeaderViewController.swift in Sources */,
-				9413F49B96D1BDA38C55039C90AB5611 /* MessageViewController.swift in Sources */,
-				1E15B18846FC5096D0C088546D99C7E2 /* NSLayoutConstraint+Extensions.swift in Sources */,
-				65E68E8FDBD28A1305BCFF919971DBE1 /* State.swift in Sources */,
-				15B6347CF50683E7C41F48FF0AD9A393 /* TorchMode.swift in Sources */,
-				2D29B53D148CEFEEC09AD91339C3ACCF /* UIView+Extensions.swift in Sources */,
-				AF8A2260E2E940DDF28FAECB7BC2F713 /* UIViewController+Extensions.swift in Sources */,
-				925D6D3D62BE0243E63A34FE8A239DEE /* VideoPermissionService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8EC3D7ADC4CA4BF5481AB17CFC2924E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F52BBE74F215CD219C080FE067D6C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -730,80 +535,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A614C5ED81CDBED10E85C73F34C5699C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5E59C962C3D153E2F2A0DCA5D352D5 /* Pods-TooHealthy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D283AB47CF36316A0A5B9BB94689B76C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCDC7BBD4CAFBE703F3F18CF7AD57DB /* LBXPermissions.swift in Sources */,
+				9A014961FB275E3D0B7104A907E1F09B /* LBXScanLineAnimation.swift in Sources */,
+				6191708B57CC850877530008D7442733 /* LBXScanNetAnimation.swift in Sources */,
+				72FDCF89CC3AE1C482A62897EEEB5889 /* LBXScanView.swift in Sources */,
+				FE4E8E8B69C6E237213AE23EC1C8D0D9 /* LBXScanViewController.swift in Sources */,
+				BFE02E0504ABBC6B0FB385F23A1BE87A /* LBXScanViewStyle.swift in Sources */,
+				955E24851730FCAC44C50105BF45C3C3 /* LBXScanWrapper.swift in Sources */,
+				6E32D2C20A7C7351DDEE429E724EA361 /* swiftScan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D7F8098D8954950220D00E9B05B2249 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BarcodeScanner-Localization";
-			target = 2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */;
-			targetProxy = 9B060A121A5ABC1DA9A2EBAC8D6AF475 /* PBXContainerItemProxy */;
-		};
 		4C96BD147A28C219742913509A3A6065 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = R.swift.Library;
 			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
 			targetProxy = 1F0ACA2E2CAC4C39619D3CD6F4CDA62F /* PBXContainerItemProxy */;
 		};
-		8F808F545ACC7D01DA80C354D34F1D80 /* PBXTargetDependency */ = {
+		51A5E20E3B32AD463A0D1B041152BBDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = R.swift;
 			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
-			targetProxy = 07E98DA626231FF332AF2D2CD71C3B1A /* PBXContainerItemProxy */;
+			targetProxy = 77AC3A51CE00ECAF5F3DF4FC43BE3710 /* PBXContainerItemProxy */;
 		};
-		AA13C25F4017928BAF64C01F11B72E9E /* PBXTargetDependency */ = {
+		7E1178040F02E7BDFA2B770DBE89719B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = R.swift.Library;
 			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
-			targetProxy = A795AB0BBC20E932D11B074F99FB47DB /* PBXContainerItemProxy */;
+			targetProxy = 50D1701DF4174A330DE51DEC080C9117 /* PBXContainerItemProxy */;
 		};
-		CDF2E8D6BFC130F44CC11E2248BAD37E /* PBXTargetDependency */ = {
+		A5EF9348CF0C61CE650802EB5B00BD3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BarcodeScanner;
-			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
-			targetProxy = 67F27D0E2EB728772D4DB52CBB05BA6D /* PBXContainerItemProxy */;
-		};
-		FA49DFF793D46A8A335F4794A253E1BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BarcodeScanner-BarcodeScanner";
-			target = 02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */;
-			targetProxy = 37FAC825F60F91F8544649E10E80EC3D /* PBXContainerItemProxy */;
+			name = swiftScan;
+			target = 53C319F440AD1ED9F637FA07994F94A5 /* swiftScan */;
+			targetProxy = F5261E4FC9EFAFA6B83417AE8248711D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		E3C0DDBC37139D2487CCFF8BB2E34DE4 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A4BCD700BEC4D63D90E9CC04F288DAB /* Localizable.strings */,
-				A55B3B4ADD0BA4B4102FE93A166C168D /* Localizable.strings */,
-				DAF45E9E444A508A0F84BDA61F4B3D10 /* Localizable.strings */,
-				CDD1DD65B25707DC19486AE15FA070DF /* Localizable.strings */,
-				7AE7B05211EB0569509AEEFA33219831 /* Localizable.strings */,
-			);
-			name = Localizable.strings;
-			path = Localization;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		0A63FE965E95934DA9679EE03F1DFF2B /* Release */ = {
+		0CC2F0E6129C82C3AAA2E938D5A3F5D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
+			baseConfigurationReference = 81C398B64DCBA8B211089821B62AE108 /* swiftScan.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = BarcodeScanner;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swiftScan/swiftScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftScan/swiftScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/swiftScan/swiftScan.modulemap";
+				PRODUCT_MODULE_NAME = swiftScan;
+				PRODUCT_NAME = swiftScan;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -865,26 +683,9 @@
 			};
 			name = Release;
 		};
-		1939DA2A1DD2E02FED5171C1144DAC4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = BarcodeScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		280953B2C329B1538FA170D526C7D5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5038CD20A160E7F9CE487931BB5BD04B /* R.swift.xcconfig */;
+			baseConfigurationReference = FABAEC835E5821A351D6B6AF0B43E637 /* R.swift.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -898,96 +699,10 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		2CE07143E3F478FAE7909F49C949AEBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = Localization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		2D0144F8B2000C7A2149F78889FECF0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner.modulemap";
-				PRODUCT_MODULE_NAME = BarcodeScanner;
-				PRODUCT_NAME = BarcodeScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		388C781818B0C8D6B1AAFA9068901DE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner.modulemap";
-				PRODUCT_MODULE_NAME = BarcodeScanner;
-				PRODUCT_NAME = BarcodeScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		398726D960DCA44CB9C7D5866A06AEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5038CD20A160E7F9CE487931BB5BD04B /* R.swift.xcconfig */;
+			baseConfigurationReference = FABAEC835E5821A351D6B6AF0B43E637 /* R.swift.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1001,7 +716,79 @@
 			};
 			name = Debug;
 		};
-		5BC7E5523E725A99CADC8CC45E11DFE6 /* Debug */ = {
+		5639C30CFCD6EF7DFE7DE6E0630AA13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C398B64DCBA8B211089821B62AE108 /* swiftScan.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swiftScan/swiftScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftScan/swiftScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/swiftScan/swiftScan.modulemap";
+				PRODUCT_MODULE_NAME = swiftScan;
+				PRODUCT_NAME = swiftScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E44B42E0BD758195007F80D2AFF24F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54969B6A53D9A8DA5E8AE22FD2FCB16 /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/R.swift.Library-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A3448FFDC23E42A47D04925AD615B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FFAB400171688F112F5AB4AD726C6FA /* Pods-TooHealthy.debug.xcconfig */;
 			buildSettings = {
@@ -1039,43 +826,7 @@
 			};
 			name = Debug;
 		};
-		5E44B42E0BD758195007F80D2AFF24F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75983A584E04494668D3219F27FE3BA3 /* R.swift.Library.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/R.swift.Library/R.swift.Library-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
-				PRODUCT_MODULE_NAME = Rswift;
-				PRODUCT_NAME = Rswift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9C7056F41E6193B0C5D1242FD3C32E7A /* Release */ = {
+		7768B738512423D8DF21F9B7808C0D0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E227ABEDF734F7E72A23506AAFCE302B /* Pods-TooHealthy.release.xcconfig */;
 			buildSettings = {
@@ -1113,23 +864,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		CA800109D29F86AD7808C646EDF408B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604F285F8078BD7DAF75359D865AE66 /* BarcodeScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = Localization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1197,7 +931,7 @@
 		};
 		FF50FBD8BA73D4F76E14C28DF53A2881 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75983A584E04494668D3219F27FE3BA3 /* R.swift.Library.xcconfig */;
+			baseConfigurationReference = D54969B6A53D9A8DA5E8AE22FD2FCB16 /* R.swift.Library.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1242,15 +976,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		448A44A9445CA0DAC47FDFE584CD42BB /* Build configuration list for PBXNativeTarget "Pods-TooHealthy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BC7E5523E725A99CADC8CC45E11DFE6 /* Debug */,
-				9C7056F41E6193B0C5D1242FD3C32E7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1260,29 +985,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BC23F97FDF1EB24F1E66BE6E3A89B72 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */ = {
+		7B7BE49BC63DCC49433E946CCE1D756C /* Build configuration list for PBXNativeTarget "Pods-TooHealthy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1939DA2A1DD2E02FED5171C1144DAC4E /* Debug */,
-				0A63FE965E95934DA9679EE03F1DFF2B /* Release */,
+				6A3448FFDC23E42A47D04925AD615B9A /* Debug */,
+				7768B738512423D8DF21F9B7808C0D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E7B7DB809EF077BA08E749AB58485ED /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */ = {
+		B43352CA0AE3F0C2EEB20BE398367D65 /* Build configuration list for PBXNativeTarget "swiftScan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA800109D29F86AD7808C646EDF408B2 /* Debug */,
-				2CE07143E3F478FAE7909F49C949AEBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		642163D3FC89EC04AC75ECACA0EB0E1E /* Build configuration list for PBXNativeTarget "BarcodeScanner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				388C781818B0C8D6B1AAFA9068901DE7 /* Debug */,
-				2D0144F8B2000C7A2149F78889FECF0E /* Release */,
+				0CC2F0E6129C82C3AAA2E938D5A3F5D6 /* Debug */,
+				5639C30CFCD6EF7DFE7DE6E0630AA13D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

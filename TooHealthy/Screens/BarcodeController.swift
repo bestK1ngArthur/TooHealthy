@@ -7,36 +7,51 @@
 //
 
 import UIKit
-import BarcodeScanner
+import swiftScan
 
 class BarcodeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    @IBAction func scanTapped(_ sender: Any) {
         
-        let viewController = BarcodeScannerViewController()
-        viewController.codeDelegate = self
-        viewController.errorDelegate = self
-        viewController.dismissalDelegate = self
+        addBarcodeController()
+    }
+    
+    func addBarcodeController() {
 
-        present(viewController, animated: true, completion: nil)
+        var style = LBXScanViewStyle()
+        style.centerUpOffset = 44
+        style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle.Inner
+        style.photoframeLineW = 4
+        style.photoframeAngleW = 28
+        style.photoframeAngleH = 16
+        style.isNeedShowRetangle = false
+        style.anmiationStyle = LBXScanViewAnimationStyle.LineStill
+//        style.animationImage = createImageWithColor(color: UIColor.red)
+        style.whRatio = 4.3/2.18
+        style.xScanRetangleOffset = 30
+        
+        let controller = LBXScanViewController()
+        controller.scanStyle = style
+        controller.scanResultDelegate = self
+        
+        view.addSubview(controller.view)
+        
+        let constraints = [
+            controller.view.topAnchor.constraint(equalTo: view.topAnchor),
+            controller.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+            controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            controller.view.rightAnchor.constraint(equalTo: view.rightAnchor)
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
+        
+        controller.didMove(toParent: self)
     }
 }
 
-extension BarcodeController: BarcodeScannerCodeDelegate, BarcodeScannerErrorDelegate, BarcodeScannerDismissalDelegate {
-    func scanner(_ controller: BarcodeScannerViewController, didReceiveError error: Error) {
-        print("error: \(error)")
-    }
-    
-    func scannerDidDismiss(_ controller: BarcodeScannerViewController) {
-        // TODO: Handle
-    }
-    
-    func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
-        print("code: \(code), type: \(type)")
+extension BarcodeController: LBXScanViewControllerDelegate {
+    func scanFinished(scanResult: LBXScanResult, error: String?) {
+        // TODO: Handle result
     }
 }

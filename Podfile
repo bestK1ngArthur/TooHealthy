@@ -6,7 +6,7 @@ target 'TooHealthy' do
   use_frameworks!
 
   # Pods for TooHealthy
-  pod 'BarcodeScanner'
+  pod 'swiftScan', :git => 'https://github.com/MxABC/swiftScan.git'
   pod 'R.swift'
 
 end
