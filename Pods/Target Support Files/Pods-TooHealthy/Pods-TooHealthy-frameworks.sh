@@ -166,6 +166,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/Reveal-SDK/RevealServer/iOS/RevealServer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Rideau/Rideau.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TransitionPatch/TransitionPatch.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -173,6 +174,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Rideau/Rideau.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TransitionPatch/TransitionPatch.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

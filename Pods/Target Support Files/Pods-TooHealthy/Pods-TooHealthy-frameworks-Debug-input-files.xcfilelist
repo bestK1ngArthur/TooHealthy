@@ -4,4 +4,5 @@ ${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
 ${PODS_ROOT}/Reveal-SDK/RevealServer/iOS/RevealServer.framework
 ${BUILT_PRODUCTS_DIR}/Rideau/Rideau.framework
 ${BUILT_PRODUCTS_DIR}/TransitionPatch/TransitionPatch.framework
+${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework
 ${BUILT_PRODUCTS_DIR}/swiftScan/swiftScan.framework

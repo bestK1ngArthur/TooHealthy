@@ -21,5 +21,6 @@ target 'TooHealthy' do
 
   # UI
   pod 'Rideau'
+  pod "WSTagsField"
   
 end
