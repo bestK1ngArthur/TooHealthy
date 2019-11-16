@@ -24,6 +24,8 @@ final class BarcodeController: UIViewController {
         super.viewDidAppear(animated)
         
         scanController?.didMove(toParent: self)
+        scanController?.startScan()
+        
         view.bringSubviewToFront(titleView)
     }
     
