@@ -10,7 +10,13 @@ import UIKit
 import WSTagsField
 
 final class ProfileViewController: UITableViewController {
+    
     @IBOutlet weak var alergicsView: WSTagsField!
+    
+    @IBOutlet weak var veganSwitch: UISwitch!
+    @IBOutlet weak var glutenFreeSwitch: UISwitch!
+    @IBOutlet weak var lactoseFreeSwitch: UISwitch!
+    @IBOutlet weak var sugarFreeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,50 +24,64 @@ final class ProfileViewController: UITableViewController {
         tableView.tableFooterView = .init()
         
         setupAlergicView()
+        showSettings()
     }
 
+    func showSettings() {
+        guard let settings = App.cache.userSettings else { return }
+        
+        alergicsView.removeTags()
+        alergicsView.addTags(settings.alergicIngredients.map { WSTag($0) })
+        
+        veganSwitch.isOn = settings.vegan
+        glutenFreeSwitch.isOn = settings.glutenFree
+        lactoseFreeSwitch.isOn = settings.lactoseFree
+        sugarFreeSwitch.isOn = settings.sugarFree
+    }
+    
     func setupAlergicView() {
         
-        alergicsView.layoutMargins = UIEdgeInsets(top: 2, left: 6, bottom: 2, right: 6)
+        alergicsView.layoutMargins = UIEdgeInsets(top: 6, left: 12, bottom: 6, right: 12)
         alergicsView.contentInset = UIEdgeInsets(top: 24, left: 10, bottom: 24, right: 10)
-        alergicsView.spaceBetweenLines = 5.0
+        alergicsView.spaceBetweenLines = 20.0
         alergicsView.spaceBetweenTags = 10.0
-        alergicsView.font = .systemFont(ofSize: 24.0)
-        alergicsView.backgroundColor = R.color.backgroundGreen()
-        alergicsView.tintColor = .green
-        alergicsView.textColor = .black
-        alergicsView.fieldTextColor = .blue
-        alergicsView.selectedColor = .black
-        alergicsView.selectedTextColor = .red
+        alergicsView.font = .systemFont(ofSize: 18.0)
+        alergicsView.cornerRadius = 12
+        alergicsView.backgroundColor = R.color.violetBackground()
+        alergicsView.tintColor = R.color.aquamarineTint()
+        alergicsView.textColor = .white
+        alergicsView.fieldTextColor = R.color.text()
+        alergicsView.selectedColor = R.color.aquamarineTint()
+        alergicsView.selectedTextColor = .white
         alergicsView.delimiter = ","
         alergicsView.isDelimiterVisible = false
-        alergicsView.placeholderColor = .green
+        alergicsView.placeholderColor = R.color.violetTint()
         alergicsView.placeholderAlwaysVisible = true
+        alergicsView.placeholder = "Enter product"
         alergicsView.keyboardAppearance = .dark
         alergicsView.returnKeyType = .next
         alergicsView.acceptTagOption = .space
 
-        // Events
         alergicsView.onDidAddTag = { field, tag in
             print("DidAddTag", tag.text)
-        }
-
-        alergicsView.onDidRemoveTag = { field, tag in
-            print("DidRemoveTag", tag.text)
-        }
-
-        alergicsView.onDidChangeText = { _, text in
-            print("DidChangeText")
         }
 
         alergicsView.onDidChangeHeightTo = { _, height in
             self.tableView.reloadData()
         }
-
-        alergicsView.onValidateTag = { tag, tags in
-            // custom validations, called before tag is added to tags list
-            return tag.text != "#" && !tags.contains(where: { $0.text.uppercased() == tag.text.uppercased() })
-        }
+    }
+    
+    @IBAction func saveTapped(_ sender: Any) {
+        let inredients = alergicsView.tags.map { $0.text }
+        let settings = UserSettings(
+            alergicIngredients: inredients,
+            vegan: veganSwitch.isOn,
+            glutenFree: glutenFreeSwitch.isOn,
+            lactoseFree: lactoseFreeSwitch.isOn,
+            sugarFree: sugarFreeSwitch.isOn
+        )
+        
+        App.cache.updateUserSettins(settings)
     }
 }
 
