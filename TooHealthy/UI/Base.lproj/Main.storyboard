@@ -57,29 +57,32 @@
         <scene sceneID="cfk-na-iiR">
             <objects>
                 <tableViewController storyboardIdentifier="ProductInfoController" id="8QT-8n-h1B" customClass="ProductInfoController" customModule="TooHealthy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Rh-ie-CxA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Rh-ie-CxA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
                             <tableViewSection id="hhh-tP-Kdk">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="280" id="Tpn-jK-hto">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Tpn-jK-hto">
                                         <rect key="frame" x="0.0" y="28" width="414" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tpn-jK-hto" id="ZIX-Lm-1bg">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tpn-jK-hto" id="ZIX-Lm-1bg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-sD-Ujt">
-                                                    <rect key="frame" x="91.5" y="35" width="231" height="146"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-sD-Ujt">
+                                                    <rect key="frame" x="44" y="35" width="326" height="146"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="G0h-sD-Ujt" secondAttribute="height" multiplier="30:19" id="4gL-VI-Lq3"/>
+                                                        <constraint firstAttribute="height" constant="146" id="VgI-U9-S5y"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-a3-GGr">
-                                                    <rect key="frame" x="44" y="213" width="326" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-a3-GGr">
+                                                    <rect key="frame" x="44" y="213" width="326" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -88,6 +91,8 @@
                                                 <constraint firstItem="DLJ-a3-GGr" firstAttribute="top" secondItem="G0h-sD-Ujt" secondAttribute="bottom" constant="32" id="0Gu-nk-EOp"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="DLJ-a3-GGr" secondAttribute="trailing" constant="24" id="Nej-Ed-yBo"/>
                                                 <constraint firstItem="G0h-sD-Ujt" firstAttribute="centerX" secondItem="ZIX-Lm-1bg" secondAttribute="centerX" id="P3L-RN-YI5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="G0h-sD-Ujt" secondAttribute="trailing" constant="24" id="fqT-yU-zM0"/>
+                                                <constraint firstItem="G0h-sD-Ujt" firstAttribute="leading" secondItem="ZIX-Lm-1bg" secondAttribute="leadingMargin" constant="24" id="hEp-wY-Qmo"/>
                                                 <constraint firstItem="G0h-sD-Ujt" firstAttribute="top" secondItem="ZIX-Lm-1bg" secondAttribute="topMargin" constant="24" id="i0P-Sg-c4A"/>
                                                 <constraint firstItem="DLJ-a3-GGr" firstAttribute="leading" secondItem="ZIX-Lm-1bg" secondAttribute="leadingMargin" constant="24" id="kbW-0Y-pAi"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="DLJ-a3-GGr" secondAttribute="bottom" constant="32" id="or4-tG-C0W"/>
@@ -155,6 +160,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="selectedImageTintColor" red="0.57891589399999999" green="0.83083873990000001" blue="0.85490959879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>

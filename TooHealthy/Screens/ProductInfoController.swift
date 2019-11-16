@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 import Rideau
+import swiftScan
 
 protocol ProductInfoControllerDelegate: AnyObject {
     func controllerWillDismissed(_ controller: ProductInfoController)
@@ -45,8 +47,13 @@ final class ProductInfoController: UITableViewController {
     }
     
     private func updateProduct() {
-        productNameLabel.text = product?.name
+        guard let product = product else { return }
+        
+        productNameLabel.text = product.name
 
+        let barcodeImage = LBXScanWrapper.createCode128(codeString: product.ean, size: productBarcodeView.bounds.size, qrColor: UIColor.black, bkColor: UIColor.white)
+        productBarcodeView.image = barcodeImage
+        
         tableView.reloadData()
     }
 }

@@ -48,6 +48,7 @@ final class BarcodeController: UIViewController {
         style.anmiationStyle = LBXScanViewAnimationStyle.LineStill
         style.whRatio = 4.3/2.18
         style.xScanRetangleOffset = 30
+        style.colorAngle = .init(red: 148/255, green: 212/255, blue: 218/255, alpha: 1)
         
         let controller = LBXScanViewController()
         controller.scanStyle = style
@@ -108,10 +109,10 @@ extension BarcodeController: LBXScanViewControllerDelegate {
           bodyViewController: RideauMaskedCornerRoundedViewController(viewController: target),
           configuration: {
             var config = RideauView.Configuration()
-            config.snapPoints = [.hidden, .autoPointsFromBottom, .fraction(0.6), .fraction(1)]
+            config.snapPoints = [.fraction(0.6), .fraction(1)]
             return config
         }(),
-          initialSnapPoint: .full, //.pointsFromBottom(CGFloat(280)),
+          initialSnapPoint: .fraction(0.6),
           resizingOption: .resizeToVisibleArea
         )
         
