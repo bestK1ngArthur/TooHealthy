@@ -12,7 +12,7 @@ import CoreLocation
 final class NetworkService {
     private let serverURL = URL(string: "https://healthyappjunction.herokuapp.com/")!
         
-    func getProductInfo(ean: String, storeID: String? = nil, success: ((Product) ->())? = nil, fail: ((Error?) -> ())? = nil) {
+    func getProductInfo(ean: String, storeID: String? = nil, userSettings: UserSettings? = nil, success: ((Product) ->())? = nil, fail: ((Error?) -> ())? = nil) {
         let url = serverURL.appendingPathComponent("productInfo")
         var params: [String: Any] = [
             "ean": ean
@@ -22,9 +22,19 @@ final class NetworkService {
             params["storeId"] = storeID
         }
         
+        if let settings = userSettings {
+            params["user"] = [
+                "ingredients": settings.alergicIngredients,
+                "vegan": settings.vegan,
+                "lacto": settings.lactoseFree,
+                "gluten_free": settings.glutenFree,
+                "sugar_free": settings.sugarFree
+            ]
+        }
+        
         print("Send EAN: \(ean)")
         
-        Alamofire.request(url, method: .get, parameters: params).responseJSON { response in
+        Alamofire.request(url, method: .post, parameters: params).responseJSON { response in
             guard response.result.isSuccess else {
                 fail?(nil)
                 return

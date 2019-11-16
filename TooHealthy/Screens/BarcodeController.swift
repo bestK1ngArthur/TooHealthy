@@ -119,7 +119,7 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         controller.rideauView.delegate = target
                 
         // Search info
-        App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID, success: { product in
+        App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID, userSettings: App.cache.userSettings, success: { product in
             
             target.product = product
             self.present(controller, animated: true, completion: nil)
