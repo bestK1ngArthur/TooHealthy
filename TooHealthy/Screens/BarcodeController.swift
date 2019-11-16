@@ -16,6 +16,10 @@ final class BarcodeController: UIViewController {
     
     private var scanController: LBXScanViewController?
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -94,9 +98,11 @@ final class BarcodeController: UIViewController {
 }
 
 extension BarcodeController: LBXScanViewControllerDelegate {
+    
     func scanFinished(scanResult: LBXScanResult, error: String?) {
         
-        let target = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoController") as! InfoController
+        let target = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductInfoController") as! ProductInfoController
+        target.delegate = self
         
         let controller = RideauViewController(
           bodyViewController: RideauMaskedCornerRoundedViewController(viewController: target),
@@ -115,5 +121,12 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         
         // Search info
         App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID)
+    }
+}
+
+extension BarcodeController: ProductInfoControllerDelegate {
+    
+    func controllerWillDismissed(_ controller: ProductInfoController) {
+        scanController?.startScan()
     }
 }

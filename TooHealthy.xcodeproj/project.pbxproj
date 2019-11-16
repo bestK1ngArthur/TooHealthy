@@ -19,7 +19,7 @@
 		A57D059A237F20C200158DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D0598237F20C200158DDD /* Main.storyboard */; };
 		A57D059C237F20C400158DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D059B237F20C400158DDD /* Assets.xcassets */; };
 		A57D059F237F20C400158DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D059D237F20C400158DDD /* LaunchScreen.storyboard */; };
-		A59920DD237FE348007E700F /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59920DC237FE348007E700F /* InfoController.swift */; };
+		A59920DD237FE348007E700F /* ProductInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59920DC237FE348007E700F /* ProductInfoController.swift */; };
 		A59920DF237FECFC007E700F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59920DE237FECFC007E700F /* LocationService.swift */; };
 		A59920E1237FF319007E700F /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59920E0237FF319007E700F /* ProductStore.swift */; };
 		AD76E4A36D3A047C1F1F87EF /* Pods_TooHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */; };
@@ -42,7 +42,7 @@
 		A57D059B237F20C400158DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57D059E237F20C400158DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57D05A0237F20C400158DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A59920DC237FE348007E700F /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		A59920DC237FE348007E700F /* ProductInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoController.swift; sourceTree = "<group>"; };
 		A59920DE237FECFC007E700F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A59920E0237FF319007E700F /* ProductStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStore.swift; sourceTree = "<group>"; };
 		F9A86DAE477587CA6C28541F /* Pods-TooHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.release.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A57D0594237F20C200158DDD /* BarcodeController.swift */,
-				A59920DC237FE348007E700F /* InfoController.swift */,
+				A59920DC237FE348007E700F /* ProductInfoController.swift */,
 				A531CDBA238025D3009ED2CE /* MenuItemCell.swift */,
 				A57D0596237F20C200158DDD /* ProfileViewController.swift */,
 			);
@@ -313,7 +313,7 @@
 				A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */,
 				A59920DF237FECFC007E700F /* LocationService.swift in Sources */,
 				A531CDBD2380317D009ED2CE /* CacheService.swift in Sources */,
-				A59920DD237FE348007E700F /* InfoController.swift in Sources */,
+				A59920DD237FE348007E700F /* ProductInfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

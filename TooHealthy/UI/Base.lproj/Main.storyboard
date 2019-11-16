@@ -106,11 +106,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Info Controller-->
+        <!--Product Info Controller-->
         <scene sceneID="igV-pG-le3">
             <objects>
-                <viewController storyboardIdentifier="InfoController" id="Wz4-iz-LYq" customClass="InfoController" customModule="TooHealthy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z5w-z2-vt5">
+                <viewController storyboardIdentifier="ProductInfoController" id="Wz4-iz-LYq" customClass="ProductInfoController" customModule="TooHealthy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.84999999999999998" contentMode="scaleToFill" id="z5w-z2-vt5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

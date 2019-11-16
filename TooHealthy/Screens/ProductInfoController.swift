@@ -1,5 +1,5 @@
 //
-//  InfoController.swift
+//  ProductInfoController.swift
 //  TooHealthy
 //
 //  Created by Artem Belkov on 16.11.2019.
@@ -9,7 +9,12 @@
 import UIKit
 import Rideau
 
-final class InfoController: UIViewController {
+protocol ProductInfoControllerDelegate: AnyObject {
+    func controllerWillDismissed(_ controller: ProductInfoController)
+}
+
+final class ProductInfoController: UIViewController {
+    weak var delegate: ProductInfoControllerDelegate?
     
     @IBOutlet weak var collectionView: UICollectionView!
       
@@ -47,9 +52,13 @@ final class InfoController: UIViewController {
         super.viewDidLoad()
     }
       
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.controllerWillDismissed(self)
+    }
 }
 
-extension InfoController: RideauViewDelegate {
+extension ProductInfoController: RideauViewDelegate {
     
     func rideauView(_ rideauView: RideauView, willMoveTo snapPoint: RideauSnapPoint) {
     
@@ -61,7 +70,7 @@ extension InfoController: RideauViewDelegate {
     }
       
     func rideauView(_ rideauView: RideauView, didMoveTo snapPoint: RideauSnapPoint) {
-    
+
     }
     
     func rideauView(_ rideauView: RideauView, animatorsAlongsideMovingIn range: ResolvedSnapPointRange) -> [UIViewPropertyAnimator] {
@@ -69,7 +78,7 @@ extension InfoController: RideauViewDelegate {
     }
 }
 
-extension InfoController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ProductInfoController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
   
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
