@@ -146,6 +146,14 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01Z-Ud-nJb">
                                                     <rect key="frame" x="16" y="58.5" width="382" height="143.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0x-cr-Z0J">
+                                                            <rect key="frame" x="138.5" y="51" width="105" height="41"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="01Z-Ud-nJb" secondAttribute="height" multiplier="160:60" id="eRx-uP-ENh">
@@ -153,11 +161,16 @@
                                                                 <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value=""/>
                                                             </userDefinedRuntimeAttributes>
                                                         </constraint>
+                                                        <constraint firstItem="O0x-cr-Z0J" firstAttribute="centerY" secondItem="01Z-Ud-nJb" secondAttribute="centerY" id="vkg-aU-FOO"/>
+                                                        <constraint firstItem="O0x-cr-Z0J" firstAttribute="centerX" secondItem="01Z-Ud-nJb" secondAttribute="centerX" id="zmg-uy-a1c"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-E3-Jl8">
                                                     <rect key="frame" x="16" y="218" width="382" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" name="PinkTint"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -176,6 +189,64 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bHi-Bm-iEH">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bHi-Bm-iEH" id="4Pm-iK-XxR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ecology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tet-DR-Sbb">
+                                                    <rect key="frame" x="16" y="16" width="382" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <color key="textColor" name="Text"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylk-2e-tyD">
+                                                    <rect key="frame" x="16" y="59" width="382" height="143.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ecology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSJ-EJ-79w">
+                                                            <rect key="frame" x="127.5" y="51" width="127" height="41"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ylk-2e-tyD" secondAttribute="height" multiplier="160:60" id="Ggg-Jn-Flk">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value=""/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstItem="YSJ-EJ-79w" firstAttribute="centerY" secondItem="Ylk-2e-tyD" secondAttribute="centerY" id="Szs-OO-LgU"/>
+                                                        <constraint firstItem="YSJ-EJ-79w" firstAttribute="centerX" secondItem="Ylk-2e-tyD" secondAttribute="centerX" id="jqD-68-9Up"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5F3-M5-mjt">
+                                                    <rect key="frame" x="16" y="219" width="382" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ylk-2e-tyD" secondAttribute="trailing" constant="16" id="Fhm-k9-af6"/>
+                                                <constraint firstAttribute="trailing" secondItem="5F3-M5-mjt" secondAttribute="trailing" constant="16" id="GuG-QL-VNY"/>
+                                                <constraint firstItem="tet-DR-Sbb" firstAttribute="top" secondItem="4Pm-iK-XxR" secondAttribute="top" constant="16" id="LKl-d9-YT8"/>
+                                                <constraint firstItem="5F3-M5-mjt" firstAttribute="top" secondItem="Ylk-2e-tyD" secondAttribute="bottom" constant="8" id="SvH-Ha-LV3"/>
+                                                <constraint firstItem="5F3-M5-mjt" firstAttribute="leading" secondItem="4Pm-iK-XxR" secondAttribute="leading" constant="16" id="dDl-ez-GcN"/>
+                                                <constraint firstItem="Ylk-2e-tyD" firstAttribute="leading" secondItem="4Pm-iK-XxR" secondAttribute="leading" constant="16" id="m5U-5c-TQV"/>
+                                                <constraint firstItem="tet-DR-Sbb" firstAttribute="leading" secondItem="4Pm-iK-XxR" secondAttribute="leading" constant="16" id="mlv-aM-g1g"/>
+                                                <constraint firstAttribute="trailing" secondItem="tet-DR-Sbb" secondAttribute="trailing" constant="16" id="nuK-up-mCm"/>
+                                                <constraint firstItem="Ylk-2e-tyD" firstAttribute="top" secondItem="tet-DR-Sbb" secondAttribute="bottom" constant="16" id="rpU-gT-LDT"/>
+                                                <constraint firstAttribute="bottom" secondItem="5F3-M5-mjt" secondAttribute="bottom" constant="16" id="sO1-67-B2l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -187,8 +258,13 @@
                     <navigationItem key="navigationItem" title="Product" id="Elp-AB-qWI"/>
                     <connections>
                         <outlet property="productBarcodeView" destination="G0h-sD-Ujt" id="7F8-dq-Uvo"/>
+                        <outlet property="productEcologyLabel" destination="YSJ-EJ-79w" id="IIz-e5-shA"/>
+                        <outlet property="productEcologyMessage" destination="5F3-M5-mjt" id="FRj-bm-OGe"/>
+                        <outlet property="productEcologyView" destination="Ylk-2e-tyD" id="ezv-2C-CHO"/>
                         <outlet property="productMessagesLabel" destination="7vo-E3-Jl8" id="Ixd-mk-W3a"/>
                         <outlet property="productNameLabel" destination="DLJ-a3-GGr" id="Kay-eJ-b0f"/>
+                        <outlet property="productRatingLabel" destination="O0x-cr-Z0J" id="691-1V-yHB"/>
+                        <outlet property="productRatingView" destination="01Z-Ud-nJb" id="r4R-Lg-AMu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdc-R3-GUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -514,10 +590,13 @@
             <color red="0.57899999618530273" green="0.83099997043609619" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PinkTint">
-            <color red="0.53184694050000003" green="0.54731303450000002" blue="0.80395025009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.53200000524520874" green="0.54699999094009399" blue="0.80400002002716064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="RoseTint">
             <color red="0.9440000057220459" green="0.65299999713897705" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

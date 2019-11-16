@@ -70,7 +70,10 @@ final class NetworkService {
                 }
             }
             
-            let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages)
+            let price = productApi["price"] as? Double
+            let package = productApi["packageType"] as? String
+            
+            let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages, price: price, package: package)
             success?(product)
         }
     }

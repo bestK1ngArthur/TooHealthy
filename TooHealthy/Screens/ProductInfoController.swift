@@ -26,7 +26,14 @@ final class ProductInfoController: UITableViewController {
     
     @IBOutlet weak var productBarcodeView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    
+    @IBOutlet weak var productRatingView: UIView!
+    @IBOutlet weak var productRatingLabel: UILabel!
     @IBOutlet weak var productMessagesLabel: UILabel!
+    
+    @IBOutlet weak var productEcologyView: UIView!
+    @IBOutlet weak var productEcologyLabel: UILabel!
+    @IBOutlet weak var productEcologyMessage: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,19 +54,31 @@ final class ProductInfoController: UITableViewController {
         guard let product = product else { return }
         
         productNameLabel.text = product.name
-
+        
         let barcodeImage = LBXScanWrapper.createCode128(codeString: product.ean, size: productBarcodeView.bounds.size, qrColor: UIColor.black, bkColor: UIColor.white)
         productBarcodeView.image = barcodeImage
         
+        productRatingView.backgroundColor = product.ratingColor
+        productRatingLabel.text = product.ratingString
+    
         if !product.messages.isEmpty {
             var messages = ""
             product.messages.forEach { message in
                 messages.append(contentsOf: "\(message)\n")
             }
             productMessagesLabel.text = messages
+            productMessagesLabel.textColor = product.ratingColor
         } else {
             productMessagesLabel.text = nil
         }
+        
+        if let package = product.package {
+            productEcologyView.backgroundColor = R.color.yellowTint()
+            productEcologyLabel.text = "🙂 \(package)"
+            productEcologyMessage.textColor = R.color.yellowTint()
+        }
+
+        productEcologyMessage.text = "Do not forget to dispose of packaging and waste properly."
         
         tableView.reloadData()
     }
