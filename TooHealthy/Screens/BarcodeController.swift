@@ -132,13 +132,16 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         controller.rideauView.delegate = target
                 
         // Search info
+        ActivityIndicator.shared.start()
         App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID, userSettings: App.cache.userSettings, success: { product in
-            
+            ActivityIndicator.shared.stop()
+
             target.product = product
             self.present(controller, animated: true, completion: nil)
             
         }) { error in
 //            self.scanController?.startScan()
+            ActivityIndicator.shared.stop()
 
             // TODO: Handle error
             print("Error: \(error)")
