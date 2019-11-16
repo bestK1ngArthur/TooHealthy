@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 import swiftScan
+import Rideau
 
 final class BarcodeController: UIViewController {
     @IBOutlet weak var titleView: UIView!
@@ -67,7 +69,7 @@ final class BarcodeController: UIViewController {
             print("Get location: \(location)")
             
             App.network.getProductStores(location: location, success: { stores in
-                // TODO: Send location
+                // TODO: Handle
             }) { error in
                 // TODO: Handle error
                 print("Error: \(error)")
@@ -81,8 +83,23 @@ final class BarcodeController: UIViewController {
 
 extension BarcodeController: LBXScanViewControllerDelegate {
     func scanFinished(scanResult: LBXScanResult, error: String?) {
-        let alert = UIAlertController(title: "Scanned", message: "EAN Code: \(scanResult.strScanned!), EAN Type; \(scanResult.strBarCodeType!)", preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
+        
+        let target = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoController") as! InfoController
+        
+        let controller = RideauViewController(
+          bodyViewController: RideauMaskedCornerRoundedViewController(viewController: target),
+          configuration: {
+            var config = RideauView.Configuration()
+            config.snapPoints = [.hidden, .autoPointsFromBottom, .fraction(0.6), .fraction(1)]
+            return config
+        }(),
+          initialSnapPoint: .autoPointsFromBottom,
+          resizingOption: .resizeToVisibleArea
+        )
+        
+        controller.rideauView.delegate = target
+        
+        present(controller, animated: true, completion: nil)
         
         // Test network request
         App.network.getProductInfo(ean: scanResult.strScanned!)

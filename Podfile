@@ -6,9 +6,20 @@ target 'TooHealthy' do
   use_frameworks!
 
   # Pods for TooHealthy
+  
+  # Barcode
   pod 'swiftScan', :git => 'https://github.com/MxABC/swiftScan.git'
+  
+  # Resources
   pod 'R.swift'
+  
+  # Network
   pod 'Alamofire'
+  
+  # Debug
   pod 'Reveal-SDK', :configurations => ['Debug']
 
+  # UI
+  pod 'Rideau'
+  
 end

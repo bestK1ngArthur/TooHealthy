@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A531CDBB238025D3009ED2CE /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531CDBA238025D3009ED2CE /* MenuItemCell.swift */; };
 		A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF2237F2FEE00ED3850 /* R.generated.swift */; };
 		A55B3DF5237FE02600ED3850 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF4237FE02600ED3850 /* NetworkService.swift */; };
 		A55B3DF8237FE03700ED3850 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF7237FE03700ED3850 /* App.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TooHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801BEF59E234975443213214 /* Pods-TooHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.debug.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.debug.xcconfig"; sourceTree = "<group>"; };
+		A531CDBA238025D3009ED2CE /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		A55B3DF2237F2FEE00ED3850 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A55B3DF4237FE02600ED3850 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A55B3DF7237FE03700ED3850 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				A57D0594237F20C200158DDD /* BarcodeController.swift */,
 				A59920DC237FE348007E700F /* InfoController.swift */,
+				A531CDBA238025D3009ED2CE /* MenuItemCell.swift */,
 				A57D0596237F20C200158DDD /* ProfileViewController.swift */,
 			);
 			path = Screens;
@@ -298,6 +301,7 @@
 			files = (
 				A57D0597237F20C200158DDD /* ProfileViewController.swift in Sources */,
 				A57D0595237F20C200158DDD /* BarcodeController.swift in Sources */,
+				A531CDBB238025D3009ED2CE /* MenuItemCell.swift in Sources */,
 				A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */,
 				A57D0591237F20C200158DDD /* AppDelegate.swift in Sources */,
 				A55B3DF5237FE02600ED3850 /* NetworkService.swift in Sources */,

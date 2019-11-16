@@ -4,12 +4,16 @@ PODS:
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
   - Reveal-SDK (24)
+  - Rideau (1.0.0):
+    - TransitionPatch (~> 1.0.0)
   - swiftScan (1.2.0)
+  - TransitionPatch (1.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - R.swift
   - Reveal-SDK
+  - Rideau
   - swiftScan (from `https://github.com/MxABC/swiftScan.git`)
 
 SPEC REPOS:
@@ -18,6 +22,8 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - Reveal-SDK
+    - Rideau
+    - TransitionPatch
 
 EXTERNAL SOURCES:
   swiftScan:
@@ -33,8 +39,10 @@ SPEC CHECKSUMS:
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
+  Rideau: 4f4219d035b03bcb7f515532276b66435fa1c201
   swiftScan: d7f91607b1a47cc04e6eb654c2c01e2e940e337d
+  TransitionPatch: c02b48b1429255b14ef82b7e411034e0958b9681
 
-PODFILE CHECKSUM: 8363528c42e02fc317127ab3be7a732f7c347c5a
+PODFILE CHECKSUM: 9ca26218b81fb093ea5937c8476236eeeda138c9
 
 COCOAPODS: 1.8.4
