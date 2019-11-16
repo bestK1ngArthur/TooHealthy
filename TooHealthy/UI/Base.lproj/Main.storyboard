@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-cu-wpf">
-                                <rect key="frame" x="146" y="68" width="122" height="37"/>
+                                <rect key="frame" x="133.5" y="68" width="147" height="42.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan barcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-xf-6H3">
-                                        <rect key="frame" x="8" y="8" width="106" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="8" y="8" width="131" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -37,16 +37,41 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-cg-fv2">
+                                <rect key="frame" x="134" y="757.5" width="146" height="35.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-Ux-24e">
+                                        <rect key="frame" x="8" y="8" width="130" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hzx-Ux-24e" secondAttribute="bottom" constant="8" id="3xX-Xf-W3r"/>
+                                    <constraint firstAttribute="trailing" secondItem="hzx-Ux-24e" secondAttribute="trailing" constant="8" id="9w3-0Z-MJx"/>
+                                    <constraint firstItem="hzx-Ux-24e" firstAttribute="leading" secondItem="aA7-cg-fv2" secondAttribute="leading" constant="8" id="baH-QA-ovr"/>
+                                    <constraint firstItem="hzx-Ux-24e" firstAttribute="top" secondItem="aA7-cg-fv2" secondAttribute="top" constant="8" id="xVg-4C-1Lb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3K5-cu-wpf" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="2tS-QL-BQq"/>
                             <constraint firstItem="3K5-cu-wpf" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="24" id="q4q-Xb-fXc"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="aA7-cg-fv2" secondAttribute="bottom" constant="20" id="qGr-O3-GVc"/>
+                            <constraint firstItem="aA7-cg-fv2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="x2I-lR-EJv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Barcode" image="barcode" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="locationTitle" destination="hzx-Ux-24e" id="BvH-Pr-IGe"/>
+                        <outlet property="locationView" destination="aA7-cg-fv2" id="Cwu-tt-etM"/>
                         <outlet property="titleView" destination="3K5-cu-wpf" id="hFl-tl-jO5"/>
                     </connections>
                 </viewController>
@@ -319,12 +344,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JuN-vq-z7S">
                                         <rect key="frame" x="0.0" y="604.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JuN-vq-z7S" id="7Hp-01-YAM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JuN-vq-z7S" id="7Hp-01-YAM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hck-Vc-o0Z">
-                                                    <rect key="frame" x="20" y="24" width="374" height="32"/>
+                                                    <rect key="frame" x="20" y="24" width="374" height="50"/>
                                                     <color key="backgroundColor" name="AquamarineTint"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="u5X-mq-h5D"/>

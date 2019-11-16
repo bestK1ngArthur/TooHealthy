@@ -61,11 +61,6 @@ final class ProfileViewController: UITableViewController {
         alergicsView.keyboardAppearance = .dark
         alergicsView.returnKeyType = .next
         alergicsView.acceptTagOption = .space
-
-        alergicsView.onDidAddTag = { field, tag in
-            print("DidAddTag", tag.text)
-        }
-
         alergicsView.onDidChangeHeightTo = { _, height in
             self.tableView.reloadData()
         }

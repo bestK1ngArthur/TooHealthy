@@ -13,6 +13,8 @@ import Rideau
 
 final class BarcodeController: UIViewController {
     @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var locationView: UIView!
+    @IBOutlet weak var locationTitle: UILabel!
     
     private var scanController: LBXScanViewController?
     
@@ -22,6 +24,8 @@ final class BarcodeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationView.isHidden = true
         
         sendLocation()
         addBarcodeController()
@@ -34,6 +38,7 @@ final class BarcodeController: UIViewController {
         scanController?.startScan()
         
         view.bringSubviewToFront(titleView)
+        view.bringSubviewToFront(locationView)
     }
     
     private func addBarcodeController() {
@@ -69,9 +74,11 @@ final class BarcodeController: UIViewController {
     }
     
     private func sendLocation() {
+        locationView.isHidden = false
         
         App.location.get(success: { location in
             App.network.getProductStore(location: location, success: { store in
+                self.locationTitle.text = "📍 \(store.name)"
                 
                 // Show alert
                 let alert = UIAlertController(title: "Are you in \(store.name)", message: "Agree if you are in store named \(store.name) at \(store.address) now?", preferredStyle: .alert)
@@ -83,15 +90,21 @@ final class BarcodeController: UIViewController {
                     alert.dismiss(animated: true, completion: nil)
                 }))
                 
-                alert.addAction(.init(title: "No", style: .cancel, handler: nil))
+                alert.addAction(.init(title: "No", style: .cancel, handler: { _ in
+                    self.locationView.isHidden = true
+                }))
                 
                 self.present(alert, animated: true, completion: nil)
                 
             }) { error in
+                self.locationView.isHidden = true
+                
                 // TODO: Handle error
                 print("Error: \(error)")
             }
         }) { error in
+            self.locationView.isHidden = true
+            
             // TODO: Handle error
             print("Error: \(error)")
         }

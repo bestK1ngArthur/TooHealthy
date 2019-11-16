@@ -34,22 +34,26 @@ final class NetworkService {
         
         print("Send EAN: \(ean)")
         
-        Alamofire.request(url, method: .post, parameters: params).responseJSON { response in
-            guard response.result.isSuccess else {
-                fail?(nil)
-                return
-            }
-            
-            guard let json = response.result.value as? [String: Any],
-                let productName = json["name"] as? String,
-                let productEan = json["ean"] as? String else {
-                fail?(nil)
-                return
-            }
-            
-            let product = Product(name: productName, ean: productEan)
-            success?(product)
+        Alamofire.request(url, method: .post, parameters: params).response { response in
+            print(response)
         }
+        
+//        Alamofire.request(url, method: .post, parameters: params).responseJSON { response in
+//            guard response.result.isSuccess else {
+//                fail?(nil)
+//                return
+//            }
+//            
+//            guard let json = response.result.value as? [String: Any],
+//                let productName = json["name"] as? String,
+//                let productEan = json["ean"] as? String else {
+//                fail?(nil)
+//                return
+//            }
+//            
+//            let product = Product(name: productName, ean: productEan)
+//            success?(product)
+//        }
     }
     
     func getProductStore(location: CLLocation, success: ((ProductStore) -> Void)? = nil, fail: ((Error?) -> Void)? = nil) {
