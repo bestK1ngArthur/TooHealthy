@@ -131,6 +131,28 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XSk-rd-1ui">
+                                        <rect key="frame" x="0.0" y="308" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSk-rd-1ui" id="aFM-dk-pQB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-rt-bSd">
+                                                    <rect key="frame" x="16" y="16" width="382" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BCR-rt-bSd" secondAttribute="trailing" constant="16" id="d0e-tB-KMR"/>
+                                                <constraint firstAttribute="bottom" secondItem="BCR-rt-bSd" secondAttribute="bottom" constant="16" id="jvr-fd-GR3"/>
+                                                <constraint firstItem="BCR-rt-bSd" firstAttribute="leading" secondItem="aFM-dk-pQB" secondAttribute="leading" constant="16" id="sWk-Qu-ftS"/>
+                                                <constraint firstItem="BCR-rt-bSd" firstAttribute="top" secondItem="aFM-dk-pQB" secondAttribute="top" constant="16" id="z7t-Wd-cHQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -454,7 +476,7 @@
             <color red="0.57899999618530273" green="0.83099997043609619" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PinkTint">
-            <color red="0.87131601569999995" green="0.72036314010000002" blue="0.97257655860000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.53184694050000003" green="0.54731303450000002" blue="0.80395025009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="RoseTint">
             <color red="0.9440000057220459" green="0.65299999713897705" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

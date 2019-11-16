@@ -35,10 +35,10 @@ final class NetworkService {
 """
     {
         \"ingredients\": \(settings.alergicIngredients),
-        \"vegan\": \(settings.vegan ? "True" : "False"),
-        \"lacto\": \(settings.lactoseFree ? "True" : "False"),
-        \"gluten_free\": \(settings.glutenFree ? "True" : "False"),
-        \"sugar_free\": \(settings.sugarFree ? "True" : "False")
+        \"vegan\": \(settings.vegan ? "true" : "false"),
+        \"lacto\": \(settings.lactoseFree ? "true" : "false"),
+        \"gluten_free\": \(settings.glutenFree ? "true" : "false"),
+        \"sugar_free\": \(settings.sugarFree ? "true" : "false")
     }
 """
     
