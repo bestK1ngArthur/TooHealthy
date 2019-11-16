@@ -9,7 +9,9 @@
 import UIKit
 import swiftScan
 
-class BarcodeController: UIViewController {
+final class BarcodeController: UIViewController {
+    @IBOutlet weak var titleView: UIView!
+    
     private var scanController: LBXScanViewController?
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class BarcodeController: UIViewController {
         super.viewDidAppear(animated)
         
         scanController?.didMove(toParent: self)
+        view.bringSubviewToFront(titleView)
     }
     
     private func addBarcodeController() {
@@ -60,5 +63,8 @@ extension BarcodeController: LBXScanViewControllerDelegate {
     func scanFinished(scanResult: LBXScanResult, error: String?) {
         let alert = UIAlertController(title: "Scanned", message: "EAN Code: \(scanResult.strScanned!), EAN Type; \(scanResult.strBarCodeType!)", preferredStyle: .alert)
         present(alert, animated: true, completion: nil)
+        
+        // Test network request
+        App.network.test()
     }
 }

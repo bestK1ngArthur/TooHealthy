@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF2237F2FEE00ED3850 /* R.generated.swift */; };
+		A55B3DF5237FE02600ED3850 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF4237FE02600ED3850 /* NetworkService.swift */; };
+		A55B3DF8237FE03700ED3850 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF7237FE03700ED3850 /* App.swift */; };
 		A57D0591237F20C200158DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0590237F20C200158DDD /* AppDelegate.swift */; };
 		A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0592237F20C200158DDD /* SceneDelegate.swift */; };
 		A57D0595237F20C200158DDD /* BarcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D0594237F20C200158DDD /* BarcodeController.swift */; };
@@ -15,6 +17,7 @@
 		A57D059A237F20C200158DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D0598237F20C200158DDD /* Main.storyboard */; };
 		A57D059C237F20C400158DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D059B237F20C400158DDD /* Assets.xcassets */; };
 		A57D059F237F20C400158DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D059D237F20C400158DDD /* LaunchScreen.storyboard */; };
+		A59920DD237FE348007E700F /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59920DC237FE348007E700F /* InfoController.swift */; };
 		AD76E4A36D3A047C1F1F87EF /* Pods_TooHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +25,8 @@
 		7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TooHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801BEF59E234975443213214 /* Pods-TooHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.debug.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 		A55B3DF2237F2FEE00ED3850 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A55B3DF4237FE02600ED3850 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A55B3DF7237FE03700ED3850 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A57D058D237F20C200158DDD /* TooHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D0590237F20C200158DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57D0592237F20C200158DDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		A57D059B237F20C400158DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57D059E237F20C400158DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57D05A0237F20C400158DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59920DC237FE348007E700F /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		F9A86DAE477587CA6C28541F /* Pods-TooHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.release.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +58,14 @@
 				7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A55B3DF6237FE02C00ED3850 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A55B3DF4237FE02600ED3850 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A57D0584237F20C200158DDD = {
@@ -76,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				A57D05A7237F2CFF00158DDD /* App */,
+				A55B3DF6237FE02C00ED3850 /* Services */,
 				A57D05A6237F2CF300158DDD /* Screens */,
 				A57D05A9237F2D1E00158DDD /* UI */,
 				A57D05A8237F2D1300158DDD /* Resources */,
@@ -87,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A57D0594237F20C200158DDD /* BarcodeController.swift */,
+				A59920DC237FE348007E700F /* InfoController.swift */,
 				A57D0596237F20C200158DDD /* ProfileViewController.swift */,
 			);
 			path = Screens;
@@ -95,6 +111,7 @@
 		A57D05A7237F2CFF00158DDD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A55B3DF7237FE03700ED3850 /* App.swift */,
 				A57D0590237F20C200158DDD /* AppDelegate.swift */,
 				A57D0592237F20C200158DDD /* SceneDelegate.swift */,
 			);
@@ -269,7 +286,10 @@
 				A57D0595237F20C200158DDD /* BarcodeController.swift in Sources */,
 				A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */,
 				A57D0591237F20C200158DDD /* AppDelegate.swift in Sources */,
+				A55B3DF5237FE02600ED3850 /* NetworkService.swift in Sources */,
+				A55B3DF8237FE03700ED3850 /* App.swift in Sources */,
 				A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */,
+				A59920DD237FE348007E700F /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

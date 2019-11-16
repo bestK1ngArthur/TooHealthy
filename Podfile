@@ -8,5 +8,7 @@ target 'TooHealthy' do
   # Pods for TooHealthy
   pod 'swiftScan', :git => 'https://github.com/MxABC/swiftScan.git'
   pod 'R.swift'
+  pod 'Alamofire'
+  pod 'Reveal-SDK', :configurations => ['Debug']
 
 end
