@@ -26,6 +26,7 @@ final class ProductInfoController: UITableViewController {
     
     @IBOutlet weak var productBarcodeView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productMessagesLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,10 +43,6 @@ final class ProductInfoController: UITableViewController {
         delegate?.controllerWillDismissed(self)
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
     private func updateProduct() {
         guard let product = product else { return }
         
@@ -53,6 +50,16 @@ final class ProductInfoController: UITableViewController {
 
         let barcodeImage = LBXScanWrapper.createCode128(codeString: product.ean, size: productBarcodeView.bounds.size, qrColor: UIColor.black, bkColor: UIColor.white)
         productBarcodeView.image = barcodeImage
+        
+        if !product.messages.isEmpty {
+            var messages = ""
+            product.messages.forEach { message in
+                messages.append(contentsOf: "\(message)\n")
+            }
+            productMessagesLabel.text = messages
+        } else {
+            productMessagesLabel.text = nil
+        }
         
         tableView.reloadData()
     }

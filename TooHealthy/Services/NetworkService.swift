@@ -56,12 +56,21 @@ final class NetworkService {
             guard let json = response.result.value as? [String: Any],
                 let productApi = json["product_api"] as? [String: Any],
                 let productName = productApi["name"] as? String,
-                let productEan = productApi["ean"] as? String else {
+                let productEan = productApi["ean"] as? String,
+                let productRating = json["rating"] as? Int,
+                let rawMessages = json["warning_message"] as? [String: Any] else {
                 fail?(nil)
                 return
             }
             
-            let product = Product(name: productName, ean: productEan)
+            var messages: [String] = []
+            rawMessages.keys.forEach { key in
+                if let message = rawMessages[key] as? String, !message.isEmpty {
+                    messages.append(message)
+                }
+            }
+            
+            let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages)
             success?(product)
         }
     }

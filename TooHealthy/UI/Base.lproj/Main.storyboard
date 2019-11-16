@@ -131,23 +131,46 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XSk-rd-1ui">
-                                        <rect key="frame" x="0.0" y="308" width="414" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="XSk-rd-1ui">
+                                        <rect key="frame" x="0.0" y="308" width="414" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSk-rd-1ui" id="aFM-dk-pQB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-rt-bSd">
-                                                    <rect key="frame" x="16" y="16" width="382" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCR-rt-bSd">
+                                                    <rect key="frame" x="16" y="16" width="382" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                     <color key="textColor" name="Text"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01Z-Ud-nJb">
+                                                    <rect key="frame" x="16" y="58.5" width="382" height="143.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="01Z-Ud-nJb" secondAttribute="height" multiplier="160:60" id="eRx-uP-ENh">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value=""/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-E3-Jl8">
+                                                    <rect key="frame" x="16" y="218" width="382" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="PinkTint"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="01Z-Ud-nJb" firstAttribute="leading" secondItem="aFM-dk-pQB" secondAttribute="leading" constant="16" id="696-Rm-pZd"/>
+                                                <constraint firstAttribute="bottom" secondItem="7vo-E3-Jl8" secondAttribute="bottom" constant="8" id="F7f-BU-Y39"/>
+                                                <constraint firstItem="7vo-E3-Jl8" firstAttribute="leading" secondItem="aFM-dk-pQB" secondAttribute="leading" constant="16" id="MUT-qm-BxM"/>
+                                                <constraint firstItem="7vo-E3-Jl8" firstAttribute="top" secondItem="01Z-Ud-nJb" secondAttribute="bottom" constant="8" id="NxP-i9-9G6"/>
+                                                <constraint firstAttribute="trailing" secondItem="7vo-E3-Jl8" secondAttribute="trailing" constant="16" id="b7S-yI-Y6A"/>
                                                 <constraint firstAttribute="trailing" secondItem="BCR-rt-bSd" secondAttribute="trailing" constant="16" id="d0e-tB-KMR"/>
-                                                <constraint firstAttribute="bottom" secondItem="BCR-rt-bSd" secondAttribute="bottom" constant="16" id="jvr-fd-GR3"/>
+                                                <constraint firstAttribute="trailing" secondItem="01Z-Ud-nJb" secondAttribute="trailing" constant="16" id="fDf-Jl-JYd"/>
+                                                <constraint firstItem="01Z-Ud-nJb" firstAttribute="top" secondItem="BCR-rt-bSd" secondAttribute="bottom" constant="16" id="pfQ-Ib-TNS"/>
                                                 <constraint firstItem="BCR-rt-bSd" firstAttribute="leading" secondItem="aFM-dk-pQB" secondAttribute="leading" constant="16" id="sWk-Qu-ftS"/>
                                                 <constraint firstItem="BCR-rt-bSd" firstAttribute="top" secondItem="aFM-dk-pQB" secondAttribute="top" constant="16" id="z7t-Wd-cHQ"/>
                                             </constraints>
@@ -164,6 +187,7 @@
                     <navigationItem key="navigationItem" title="Product" id="Elp-AB-qWI"/>
                     <connections>
                         <outlet property="productBarcodeView" destination="G0h-sD-Ujt" id="7F8-dq-Uvo"/>
+                        <outlet property="productMessagesLabel" destination="7vo-E3-Jl8" id="Ixd-mk-W3a"/>
                         <outlet property="productNameLabel" destination="DLJ-a3-GGr" id="Kay-eJ-b0f"/>
                     </connections>
                 </tableViewController>
@@ -494,9 +518,6 @@
         </namedColor>
         <namedColor name="RoseTint">
             <color red="0.9440000057220459" green="0.65299999713897705" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Text">
-            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -11,4 +11,6 @@ import Foundation
 struct Product {
     let name: String
     let ean: String
+    let rating: Int
+    let messages: [String]
 }
