@@ -67,6 +67,6 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         present(alert, animated: true, completion: nil)
         
         // Test network request
-        App.network.test()
+        App.network.productInfo(code: scanResult.strScanned!)
     }
 }

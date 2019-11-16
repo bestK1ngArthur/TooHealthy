@@ -11,9 +11,13 @@ import Alamofire
 class NetworkService {
     private let serverURL = URL(string: "https://healthyappjunction.herokuapp.com/")!
     
-    func test(success: ((String) ->())? = nil, failure: ((Error) -> ())? = nil) {
-        let url = serverURL.appendingPathComponent("productInfo/124")
-        Alamofire.request(url).responseJSON { response in
+    func productInfo(code: String, success: ((String) ->())? = nil, failure: ((Error) -> ())? = nil) {
+        let url = serverURL.appendingPathComponent("productInfo")
+        let params: [String: Any] = [
+            "ean": code
+        ]
+        
+        Alamofire.request(url, method: .get, parameters: params).responseJSON { response in
             print(response)
         }
     }
