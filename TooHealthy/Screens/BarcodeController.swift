@@ -111,16 +111,22 @@ extension BarcodeController: LBXScanViewControllerDelegate {
             config.snapPoints = [.hidden, .autoPointsFromBottom, .fraction(0.6), .fraction(1)]
             return config
         }(),
-          initialSnapPoint: .autoPointsFromBottom,
+          initialSnapPoint: .full, //.pointsFromBottom(CGFloat(280)),
           resizingOption: .resizeToVisibleArea
         )
         
         controller.rideauView.delegate = target
-        
-        present(controller, animated: true, completion: nil)
-        
+                
         // Search info
-        App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID)
+        App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID, success: { product in
+            
+            target.product = product
+            self.present(controller, animated: true, completion: nil)
+            
+        }) { error in
+            // TODO: Handle error
+            print("Error: \(error)")
+        }
     }
 }
 

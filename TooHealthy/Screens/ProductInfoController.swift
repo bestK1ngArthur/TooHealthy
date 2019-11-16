@@ -13,48 +13,41 @@ protocol ProductInfoControllerDelegate: AnyObject {
     func controllerWillDismissed(_ controller: ProductInfoController)
 }
 
-final class ProductInfoController: UIViewController {
+final class ProductInfoController: UITableViewController {
     weak var delegate: ProductInfoControllerDelegate?
     
-    @IBOutlet weak var collectionView: UICollectionView!
-      
-    private let models: [String] = [
-        "😀",
-        "😁",
-        "😂",
-        "🤣",
-        "😃",
-        "😄",
-        "😅",
-        "😆",
-        "😉",
-        "😊",
-        "😋",
-        "😎",
-        "😍",
-        "😘",
-        "🥰",
-        "😗",
-        "😙",
-        "😚",
-        "☺️",
-        "🙂",
-        "🤗",
-        "🤩",
-        "🤔"
-     ]
-      
+    var product: Product? {
+        didSet {
+            updateProduct()
+        }
+    }
+    
+    @IBOutlet weak var productBarcodeView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
       
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.tableFooterView = .init()
     }
       
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         delegate?.controllerWillDismissed(self)
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    private func updateProduct() {
+        productNameLabel.text = product?.name
+
+        tableView.reloadData()
     }
 }
 
@@ -63,9 +56,9 @@ extension ProductInfoController: RideauViewDelegate {
     func rideauView(_ rideauView: RideauView, willMoveTo snapPoint: RideauSnapPoint) {
     
         if snapPoint == .autoPointsFromBottom {
-            collectionView.alpha = 0.8
+            tableView.alpha = 0.8
         } else {
-            collectionView.alpha = 1
+            tableView.alpha = 1
         }
     }
       
@@ -77,29 +70,3 @@ extension ProductInfoController: RideauViewDelegate {
         return []
     }
 }
-
-extension ProductInfoController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-  
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-      
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return models.count
-    }
-      
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuItemCell", for: indexPath) as! MenuItemCell
-        let model = models[indexPath.item]
-        
-        cell.label.text = model
-        
-        return cell
-    }
-      
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collectionView.bounds.width, height: 60)
-    }
-}
-
