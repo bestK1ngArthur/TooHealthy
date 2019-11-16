@@ -17,6 +17,7 @@ final class BarcodeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        sendLocation()
         addBarcodeController()
     }
     
@@ -59,6 +60,23 @@ final class BarcodeController: UIViewController {
         
         scanController = controller
     }
+    
+    private func sendLocation() {
+        
+        App.location.get(success: { location in
+            print("Get location: \(location)")
+            
+            App.network.getProductStores(location: location, success: { stores in
+                // TODO: Send location
+            }) { error in
+                // TODO: Handle error
+                print("Error: \(error)")
+            }
+        }) { error in
+            // TODO: Handle error
+            print("Error: \(error)")
+        }
+    }
 }
 
 extension BarcodeController: LBXScanViewControllerDelegate {
@@ -67,6 +85,6 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         present(alert, animated: true, completion: nil)
         
         // Test network request
-        App.network.productInfo(code: scanResult.strScanned!)
+        App.network.getProductInfo(code: scanResult.strScanned!)
     }
 }

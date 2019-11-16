@@ -7,18 +7,28 @@
 //
 
 import Alamofire
+import CoreLocation
 
-class NetworkService {
+final class NetworkService {
     private let serverURL = URL(string: "https://healthyappjunction.herokuapp.com/")!
-    
-    func productInfo(code: String, success: ((String) ->())? = nil, failure: ((Error) -> ())? = nil) {
-        let url = serverURL.appendingPathComponent("productInfo")
+        
+    func getProductInfo(code: String, success: ((String) ->())? = nil, failure: ((Error) -> ())? = nil) {
+        let url = serverURL.appendingPathComponent("productInfoStore")
         let params: [String: Any] = [
-            "ean": code
+            "ean": code,
+            "storeId": "N106"
         ]
         
-        Alamofire.request(url, method: .get, parameters: params).responseJSON { response in
+        Alamofire.request(url, method: .get, parameters: params).response { response in
             print(response)
         }
+        
+//        Alamofire.request(url, method: .get, parameters: params).responseJSON { response in
+//            print(response)
+//        }
+    }
+    
+    func getProductStores(location: CLLocation, success: (([ProductStore]) -> Void)? = nil, fail: ((Error) -> Void)? = nil) {
+        print("Send location: \(location.coordinate.longitude), \(location.coordinate.latitude)")
     }
 }

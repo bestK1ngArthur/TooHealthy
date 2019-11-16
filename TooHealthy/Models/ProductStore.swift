@@ -1,5 +1,5 @@
 //
-//  App.swift
+//  ProductStore.swift
 //  TooHealthy
 //
 //  Created by Artem Belkov on 16.11.2019.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-struct App {
-    static let network = NetworkService()
-    static let location = LocationService()
+struct ProductStore {
+    let title: String
 }

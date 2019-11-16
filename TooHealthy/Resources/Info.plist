@@ -22,6 +22,14 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>We need camera access to scan product's barcode</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need your location to find nearby store</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to find nearby store</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We need your location to find nearby store</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to find nearby store</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -48,6 +56,8 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>location-services</string>
+		<string>gps</string>
 	</array>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
@@ -62,8 +72,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
