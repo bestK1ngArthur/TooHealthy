@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Barcode-->
+        <!--Barcode Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="BarcodeController" customModule="TooHealthy" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Barcode" image="barcode" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="barcode" id="acW-dT-cKf">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="RoseTint"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="locationTitle" destination="hzx-Ux-24e" id="BvH-Pr-IGe"/>
                         <outlet property="locationView" destination="aA7-cg-fv2" id="Cwu-tt-etM"/>
@@ -405,7 +411,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="selectedImageTintColor" red="0.57891589399999999" green="0.83083873990000001" blue="0.85490959879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" name="PinkTint"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -416,11 +422,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="XVg-5m-jwZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZq-iU-DCe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="OdN-fy-MvO"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="OdN-fy-MvO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="AUg-ld-SEZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -445,7 +451,13 @@
         <image name="barcode" width="30" height="30"/>
         <image name="profile" width="30" height="30"/>
         <namedColor name="AquamarineTint">
-            <color red="0.57891589399999999" green="0.83083873990000001" blue="0.85490959879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.57899999618530273" green="0.83099997043609619" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PinkTint">
+            <color red="0.87131601569999995" green="0.72036314010000002" blue="0.97257655860000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="RoseTint">
+            <color red="0.9440000057220459" green="0.65299999713897705" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

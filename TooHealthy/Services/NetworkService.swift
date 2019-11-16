@@ -23,37 +23,46 @@ final class NetworkService {
         }
         
         if let settings = userSettings {
-            params["user"] = [
-                "ingredients": settings.alergicIngredients,
-                "vegan": settings.vegan,
-                "lacto": settings.lactoseFree,
-                "gluten_free": settings.glutenFree,
-                "sugar_free": settings.sugarFree
-            ]
+//            let user: [String: Any] = [
+//                "ingredients": settings.alergicIngredients,
+//                "vegan": settings.vegan,
+//                "lacto": settings.lactoseFree,
+//                "gluten_free": settings.glutenFree,
+//                "sugar_free": settings.sugarFree
+//            ]
+            
+            let userJson =
+"""
+    {
+        \"ingredients\": \(settings.alergicIngredients),
+        \"vegan\": \(settings.vegan ? "True" : "False"),
+        \"lacto\": \(settings.lactoseFree ? "True" : "False"),
+        \"gluten_free\": \(settings.glutenFree ? "True" : "False"),
+        \"sugar_free\": \(settings.sugarFree ? "True" : "False")
+    }
+"""
+    
+            params["user"] = userJson
         }
         
         print("Send EAN: \(ean)")
-        
-        Alamofire.request(url, method: .post, parameters: params).response { response in
-            print(response)
+   
+        Alamofire.request(url, method: .post, parameters: params).responseJSON { response in
+            guard response.result.isSuccess else {
+                fail?(nil)
+                return
+            }
+            
+            guard let json = response.result.value as? [String: Any],
+                let productName = json["name"] as? String,
+                let productEan = json["ean"] as? String else {
+                fail?(nil)
+                return
+            }
+            
+            let product = Product(name: productName, ean: productEan)
+            success?(product)
         }
-        
-//        Alamofire.request(url, method: .post, parameters: params).responseJSON { response in
-//            guard response.result.isSuccess else {
-//                fail?(nil)
-//                return
-//            }
-//            
-//            guard let json = response.result.value as? [String: Any],
-//                let productName = json["name"] as? String,
-//                let productEan = json["ean"] as? String else {
-//                fail?(nil)
-//                return
-//            }
-//            
-//            let product = Product(name: productName, ean: productEan)
-//            success?(product)
-//        }
     }
     
     func getProductStore(location: CLLocation, success: ((ProductStore) -> Void)? = nil, fail: ((Error?) -> Void)? = nil) {

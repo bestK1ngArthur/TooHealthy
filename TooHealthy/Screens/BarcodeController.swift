@@ -98,13 +98,13 @@ final class BarcodeController: UIViewController {
                 
             }) { error in
                 self.locationView.isHidden = true
-                
+
                 // TODO: Handle error
                 print("Error: \(error)")
             }
         }) { error in
             self.locationView.isHidden = true
-            
+
             // TODO: Handle error
             print("Error: \(error)")
         }
@@ -138,6 +138,8 @@ extension BarcodeController: LBXScanViewControllerDelegate {
             self.present(controller, animated: true, completion: nil)
             
         }) { error in
+//            self.scanController?.startScan()
+
             // TODO: Handle error
             print("Error: \(error)")
         }

@@ -135,22 +135,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32D7D899-63D0-4810-A0C8-EC7D2E7A2DEB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Services/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "AFC36847-D037-44F3-BB99-5441E5490EA4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -167,81 +151,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "74718339-1DCA-483A-9222-EB6C04EAFFCF"
+            uuid = "1F20C16E-0E4C-4DFA-932B-E35DA1A0AB4C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Services/NetworkService.swift"
+            filePath = "TooHealthy/Resources/BubbleTabBar/Classes/BubbleTabBarController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "updateTabBarFrame()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CDF38ED1-E23C-4A1E-AB54-224534410B52"
-            shouldBeEnabled = "No"
+            uuid = "CB0E7FD0-6BC9-40E4-8258-BA6CA5818FBF"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Services/NetworkService.swift"
+            filePath = "TooHealthy/Resources/BubbleTabBar/Classes/BubbleTabBarController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "updateTabBarFrame()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1ADCEFD6-5461-4E15-AE5E-ADB3048487DB"
+            uuid = "C29D4B40-CA71-4CBD-AB2E-5328CEB7541C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TooHealthy/Services/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1ADCEFD6-5461-4E15-AE5E-ADB3048487DB - 4735348625e2cc29"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TooHealthy.NetworkService.getProductInfo(ean: Swift.String, storeID: Swift.Optional&lt;Swift.String&gt;, userSettings: Swift.Optional&lt;TooHealthy.UserSettings&gt;, success: Swift.Optional&lt;(TooHealthy.Product) -&gt; ()&gt;, fail: Swift.Optional&lt;(Swift.Optional&lt;Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
-                  moduleName = "TooHealthy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bestk1ng/Developer/TooHealthy/TooHealthy/Services/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "1880">
-               </Location>
-               <Location
-                  uuid = "1ADCEFD6-5461-4E15-AE5E-ADB3048487DB - 1045be0a93c43e4"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DefaultDataResponse) -&gt; () in TooHealthy.NetworkService.getProductInfo(ean: Swift.String, storeID: Swift.Optional&lt;Swift.String&gt;, userSettings: Swift.Optional&lt;TooHealthy.UserSettings&gt;, success: Swift.Optional&lt;(TooHealthy.Product) -&gt; ()&gt;, fail: Swift.Optional&lt;(Swift.Optional&lt;Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
-                  moduleName = "TooHealthy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bestk1ng/Developer/TooHealthy/TooHealthy/Services/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
