@@ -18,10 +18,15 @@ final class ProfileViewController: UITableViewController {
     @IBOutlet weak var lactoseFreeSwitch: UISwitch!
     @IBOutlet weak var sugarFreeSwitch: UISwitch!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.tableFooterView = .init()
+        tableView.backgroundColor = .white
         
         setupAlergicView()
         showSettings()
