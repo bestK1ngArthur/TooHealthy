@@ -62,8 +62,8 @@
             filePath = "TooHealthy/Screens/BarcodeController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "sendLocation()"
             landmarkType = "7">
             <Locations>
@@ -113,38 +113,6 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "get(success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3D93A076-A93F-4300-AE8C-9734A4978B44"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Services/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getProductInfo(ean:storeID:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "387CA236-47A7-45A7-B786-64D359436169"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Screens/BarcodeController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "scanFinished(scanResult:error:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

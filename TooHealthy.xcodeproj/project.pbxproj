@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A531CDBB238025D3009ED2CE /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531CDBA238025D3009ED2CE /* MenuItemCell.swift */; };
+		A531CDBD2380317D009ED2CE /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531CDBC2380317D009ED2CE /* CacheService.swift */; };
 		A55B3DF3237F2FEE00ED3850 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF2237F2FEE00ED3850 /* R.generated.swift */; };
 		A55B3DF5237FE02600ED3850 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF4237FE02600ED3850 /* NetworkService.swift */; };
 		A55B3DF8237FE03700ED3850 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3DF7237FE03700ED3850 /* App.swift */; };
@@ -28,6 +29,7 @@
 		7FFDEE28681F592A991C1771 /* Pods_TooHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TooHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		801BEF59E234975443213214 /* Pods-TooHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooHealthy.debug.xcconfig"; path = "Target Support Files/Pods-TooHealthy/Pods-TooHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 		A531CDBA238025D3009ED2CE /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		A531CDBC2380317D009ED2CE /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		A55B3DF2237F2FEE00ED3850 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A55B3DF4237FE02600ED3850 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A55B3DF7237FE03700ED3850 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				A55B3DF4237FE02600ED3850 /* NetworkService.swift */,
 				A59920DE237FECFC007E700F /* LocationService.swift */,
+				A531CDBC2380317D009ED2CE /* CacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				A55B3DF8237FE03700ED3850 /* App.swift in Sources */,
 				A57D0593237F20C200158DDD /* SceneDelegate.swift in Sources */,
 				A59920DF237FECFC007E700F /* LocationService.swift in Sources */,
+				A531CDBD2380317D009ED2CE /* CacheService.swift in Sources */,
 				A59920DD237FE348007E700F /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

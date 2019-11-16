@@ -28,13 +28,35 @@ final class NetworkService {
             print(response)
             success?("SUCCESS")
         }
-        
-//        Alamofire.request(url, method: .get, parameters: params).response { response in
-//            print(response)
-//        }
     }
     
-    func getProductStores(location: CLLocation, success: (([ProductStore]) -> Void)? = nil, fail: ((Error) -> Void)? = nil) {
-        print("Send location: \(location.coordinate.longitude), \(location.coordinate.latitude)")
+    func getProductStore(location: CLLocation, success: ((ProductStore) -> Void)? = nil, fail: ((Error?) -> Void)? = nil) {
+        let url = serverURL.appendingPathComponent("getShops")
+        let params: [String: Any] = [
+            "lon": location.coordinate.longitude,
+            "lan": location.coordinate.latitude
+        ]
+
+        print("Sending location: \(location.coordinate.longitude), \(location.coordinate.latitude)")
+        
+        Alamofire.request(url, method: .get, parameters: params).responseJSON { response in
+            guard response.result.isSuccess else {
+                fail?(nil)
+                return
+            }
+            
+            guard let array = response.result.value as? [Any],
+                let json = array.first as? [String: Any],
+                let raw = json["Message"] as? [String: Any],
+                let storeID = raw["id"] as? String,
+                let storeName = raw["name"] as? String,
+                let storeAddress = raw["address"] as? String else {
+                fail?(nil)
+                return
+            }
+            
+            let store = ProductStore(id: storeID, name: storeName, address: storeAddress)
+            success?(store)
+        }
     }
 }

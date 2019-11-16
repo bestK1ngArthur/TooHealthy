@@ -9,5 +9,7 @@
 import Foundation
 
 struct ProductStore {
-    let title: String
+    let id: String
+    let name: String
+    let address: String
 }

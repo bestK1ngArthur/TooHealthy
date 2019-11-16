@@ -66,10 +66,22 @@ final class BarcodeController: UIViewController {
     private func sendLocation() {
         
         App.location.get(success: { location in
-            print("Get location: \(location)")
-            
-            App.network.getProductStores(location: location, success: { stores in
-                // TODO: Handle
+            App.network.getProductStore(location: location, success: { store in
+                
+                // Show alert
+                let alert = UIAlertController(title: "Are you in \(store.name)", message: "Agree if you are in store named \(store.name) at \(store.address) now?", preferredStyle: .alert)
+                
+                alert.addAction(.init(title: "Yes", style: .default, handler: { _ in
+                    
+                    // Cache current store
+                    App.cache.updateStoreID(store.id)
+                    alert.dismiss(animated: true, completion: nil)
+                }))
+                
+                alert.addAction(.init(title: "No", style: .cancel, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+                
             }) { error in
                 // TODO: Handle error
                 print("Error: \(error)")
@@ -101,7 +113,7 @@ extension BarcodeController: LBXScanViewControllerDelegate {
         
         present(controller, animated: true, completion: nil)
         
-        // Test network request
-        App.network.getProductInfo(ean: scanResult.strScanned!)
+        // Search info
+        App.network.getProductInfo(ean: scanResult.strScanned!, storeID: App.cache.storeID)
     }
 }

@@ -11,4 +11,5 @@ import Foundation
 struct App {
     static let network = NetworkService()
     static let location = LocationService()
+    static let cache = CacheService()
 }
