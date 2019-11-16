@@ -54,8 +54,9 @@ final class NetworkService {
             }
             
             guard let json = response.result.value as? [String: Any],
-                let productName = json["name"] as? String,
-                let productEan = json["ean"] as? String else {
+                let productApi = json["product_api"] as? [String: Any],
+                let productName = productApi["name"] as? String,
+                let productEan = productApi["ean"] as? String else {
                 fail?(nil)
                 return
             }
