@@ -10,14 +10,21 @@ import UIKit
 import swiftScan
 
 class BarcodeController: UIViewController {
-
+    private var scanController: LBXScanViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addBarcodeController()
     }
     
-    func addBarcodeController() {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        scanController?.didMove(toParent: self)
+    }
+    
+    private func addBarcodeController() {
 
         var style = LBXScanViewStyle()
         style.centerUpOffset = 44
@@ -27,7 +34,6 @@ class BarcodeController: UIViewController {
         style.photoframeAngleH = 16
         style.isNeedShowRetangle = false
         style.anmiationStyle = LBXScanViewAnimationStyle.LineStill
-//        style.animationImage = createImageWithColor(color: UIColor.red)
         style.whRatio = 4.3/2.18
         style.xScanRetangleOffset = 30
         
@@ -46,12 +52,13 @@ class BarcodeController: UIViewController {
         
         NSLayoutConstraint.activate(constraints)
         
-        controller.didMove(toParent: self)
+        scanController = controller
     }
 }
 
 extension BarcodeController: LBXScanViewControllerDelegate {
     func scanFinished(scanResult: LBXScanResult, error: String?) {
-        // TODO: Handle result
+        let alert = UIAlertController(title: "Scanned", message: "EAN Code: \(scanResult.strScanned!), EAN Type; \(scanResult.strBarCodeType!)", preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
     }
 }
