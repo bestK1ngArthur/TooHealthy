@@ -206,8 +206,8 @@
             filePath = "TooHealthy/Services/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -231,22 +231,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7D82C5C7-861F-433C-93DA-96CDA201BB15"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TooHealthy/Services/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "88A0CC11-A527-4FEB-82B5-87F8354AC601"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -254,8 +238,8 @@
             filePath = "TooHealthy/Services/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,7 +248,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "16CFEAC3-1235-4588-BC83-5CF10E0A6763"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TooHealthy/UI/ActivityIndicator.swift"
@@ -273,6 +257,22 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "prepare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09CD5C9B-361F-4CB5-B2DC-5A585BF5B6FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TooHealthy/Services/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getProductInfo(ean:storeID:userSettings:success:fail:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

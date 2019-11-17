@@ -119,16 +119,25 @@
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV3-K4-cdu">
+                                                    <rect key="frame" x="44" y="250" width="326" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" name="PinkTint"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DLJ-a3-GGr" firstAttribute="top" secondItem="G0h-sD-Ujt" secondAttribute="bottom" constant="32" id="0Gu-nk-EOp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="AV3-K4-cdu" secondAttribute="bottom" constant="24" id="7G6-RL-Jhw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AV3-K4-cdu" secondAttribute="trailing" constant="24" id="8Ta-dz-oJN"/>
+                                                <constraint firstItem="AV3-K4-cdu" firstAttribute="leading" secondItem="ZIX-Lm-1bg" secondAttribute="leadingMargin" constant="24" id="Jfy-KA-C8t"/>
+                                                <constraint firstItem="AV3-K4-cdu" firstAttribute="top" secondItem="DLJ-a3-GGr" secondAttribute="bottom" constant="8" id="MEt-yx-BBT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="DLJ-a3-GGr" secondAttribute="trailing" constant="24" id="Nej-Ed-yBo"/>
                                                 <constraint firstItem="G0h-sD-Ujt" firstAttribute="centerX" secondItem="ZIX-Lm-1bg" secondAttribute="centerX" id="P3L-RN-YI5"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="G0h-sD-Ujt" secondAttribute="trailing" constant="24" id="fqT-yU-zM0"/>
                                                 <constraint firstItem="G0h-sD-Ujt" firstAttribute="leading" secondItem="ZIX-Lm-1bg" secondAttribute="leadingMargin" constant="24" id="hEp-wY-Qmo"/>
                                                 <constraint firstItem="G0h-sD-Ujt" firstAttribute="top" secondItem="ZIX-Lm-1bg" secondAttribute="topMargin" constant="24" id="i0P-Sg-c4A"/>
                                                 <constraint firstItem="DLJ-a3-GGr" firstAttribute="leading" secondItem="ZIX-Lm-1bg" secondAttribute="leadingMargin" constant="24" id="kbW-0Y-pAi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="DLJ-a3-GGr" secondAttribute="bottom" constant="32" id="or4-tG-C0W"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -348,6 +357,7 @@
                     <navigationItem key="navigationItem" title="Product" id="Elp-AB-qWI"/>
                     <connections>
                         <outlet property="analoguesCollectionView" destination="JSV-Bw-dYc" id="WBH-mI-1b2"/>
+                        <outlet property="priceLabel" destination="AV3-K4-cdu" id="N4Y-KZ-kC4"/>
                         <outlet property="productBarcodeView" destination="G0h-sD-Ujt" id="7F8-dq-Uvo"/>
                         <outlet property="productEcologyLabel" destination="YSJ-EJ-79w" id="IIz-e5-shA"/>
                         <outlet property="productEcologyMessage" destination="5F3-M5-mjt" id="FRj-bm-OGe"/>

@@ -145,6 +145,12 @@ extension BarcodeController: LBXScanViewControllerDelegate {
 
             // TODO: Handle error
             print("Error: \(error)")
+            
+            // Show alert
+            let alert = UIAlertController(title: "Error", message: "Product did not found", preferredStyle: .alert)
+            alert.addAction(.init(title: "Cancel", style: .cancel, handler: { _ in
+                self.scanController?.startScan()
+            }))
         }
     }
 }

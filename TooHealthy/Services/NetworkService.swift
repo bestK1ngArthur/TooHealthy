@@ -53,15 +53,26 @@ final class NetworkService {
                 return
             }
             
-            guard let json = response.result.value as? [String: Any],
-                let productApi = json["product_api"] as? [String: Any],
-                let productName = productApi["name"] as? String,
-                let productEan = productApi["ean"] as? String,
-                let productRating = json["rating"] as? Int,
-                let rawMessages = json["warning_message"] as? [String: Any] else {
+            guard let json = response.result.value as? [String: Any] else {
                 fail?(nil)
                 return
             }
+            
+            var name = json["name"] as? String
+            var ean = json["ean"] as? String
+
+            var price: Double?
+            var package: String?
+
+            if let productApi = json["product_api"] as? [String: Any] {
+                name = productApi["name"] as? String
+                ean = productApi["ean"] as? String
+                price = productApi["price"] as? Double
+                package = productApi["packageType"] as? String
+            }
+            
+            let productRating = (json["rating"] as? Int) ?? 3
+            let rawMessages = (json["warning_message"] as? [String: Any]) ?? [:]
             
             var messages: [String] = []
             rawMessages.keys.forEach { key in
@@ -69,16 +80,18 @@ final class NetworkService {
                     messages.append(message)
                 }
             }
-            
-            let price = productApi["price"] as? Double
-            let package = productApi["packageType"] as? String
-            
+                        
             let rawAnalogues: [[String: Any]] = json["analogues"] as? [[String: Any]] ?? []
             let analogues = rawAnalogues.compactMap { json -> Product.ProductAnalogue? in
                 guard let name = json["name"] as? String,
                     let ean = json["ean"] as? String,
                     let rating = json["rating"] as? Int else { return nil }
                 return Product.ProductAnalogue(name: name, ean: ean, rating: rating)
+            }
+            
+            guard let productName = name, let productEan = ean else {
+                fail?(nil)
+                return
             }
             
             let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages, price: price, package: package, analogues: analogues)

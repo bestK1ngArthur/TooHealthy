@@ -32,6 +32,7 @@ final class ProductInfoController: UITableViewController {
     
     @IBOutlet weak var productBarcodeView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     @IBOutlet weak var productRatingView: UIView!
     @IBOutlet weak var productRatingLabel: UILabel!
@@ -72,6 +73,12 @@ final class ProductInfoController: UITableViewController {
         productRatingView.backgroundColor = product.ratingColor
         productRatingLabel.text = product.ratingString
     
+        if let price = product.price {
+            priceLabel.text = "\(price)€"
+        } else {
+            priceLabel.text = nil
+        }
+        
         if !product.messages.isEmpty {
             var messages = ""
             product.messages.forEach { message in
