@@ -73,7 +73,15 @@ final class NetworkService {
             let price = productApi["price"] as? Double
             let package = productApi["packageType"] as? String
             
-            let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages, price: price, package: package)
+            let rawAnalogues: [[String: Any]] = json["analogues"] as? [[String: Any]] ?? []
+            let analogues = rawAnalogues.compactMap { json -> Product.ProductAnalogue? in
+                guard let name = json["name"] as? String,
+                    let ean = json["ean"] as? String,
+                    let rating = json["rating"] as? Int else { return nil }
+                return Product.ProductAnalogue(name: name, ean: ean, rating: rating)
+            }
+            
+            let product = Product(name: productName, ean: productEan, rating: productRating, messages: messages, price: price, package: package, analogues: analogues)
             success?(product)
         }
     }

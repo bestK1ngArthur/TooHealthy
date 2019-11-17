@@ -11,6 +11,12 @@ import UIKit
 import Rideau
 import swiftScan
 
+final class ProductAnalogueCell: UICollectionViewCell {
+    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emojiLabel: UILabel!
+}
+
 protocol ProductInfoControllerDelegate: AnyObject {
     func controllerWillDismissed(_ controller: ProductInfoController)
 }
@@ -35,6 +41,8 @@ final class ProductInfoController: UITableViewController {
     @IBOutlet weak var productEcologyLabel: UILabel!
     @IBOutlet weak var productEcologyMessage: UILabel!
     
+    @IBOutlet weak var analoguesCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -43,6 +51,9 @@ final class ProductInfoController: UITableViewController {
         super.viewDidLoad()
         
         tableView.tableFooterView = .init()
+        
+        analoguesCollectionView.delegate = self
+        analoguesCollectionView.dataSource = self
     }
       
     override func viewWillDisappear(_ animated: Bool) {
@@ -101,5 +112,24 @@ extension ProductInfoController: RideauViewDelegate {
     
     func rideauView(_ rideauView: RideauView, animatorsAlongsideMovingIn range: ResolvedSnapPointRange) -> [UIViewPropertyAnimator] {
         return []
+    }
+}
+
+extension ProductInfoController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return product?.analogues.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductAnalogueCell", for: indexPath) as? ProductAnalogueCell, let analogue = product?.analogues[indexPath.row] else {
+            return UICollectionViewCell()
+        }
+        
+        cell.colorView.backgroundColor = analogue.ratingColor
+        cell.nameLabel.text = analogue.name
+        cell.nameLabel.textColor = analogue.ratingColor
+        cell.emojiLabel.text = analogue.ratingString
+        
+        return cell
     }
 }
